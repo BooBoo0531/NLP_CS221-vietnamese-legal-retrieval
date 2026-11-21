@@ -1,0 +1,9 @@
+Số câu được chấm: 482
+Số câu có kết quả: 482
+Recall@1   0.428423
+Recall@5   0.692946
+Recall@10  0.776971
+Recall@20  0.821577
+Recall@100 0.910788
+MRR@10     0.549443
+nDCG@10    0.603472

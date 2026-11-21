@@ -1,8 +1,44 @@
-# CS221 · Truy hồi điều luật tiếng Việt
+# Xử lý ngôn ngữ tự nhiên - CS221.R12
 
-Đồ án môn Xử lý ngôn ngữ tự nhiên (CS221), UIT. Với một câu hỏi pháp lý bằng tiếng Việt, hệ thống xếp hạng các điều luật liên quan trong một kho văn bản cố định. Nhóm sẽ so sánh TF-IDF, BM25, bi-encoder và phương pháp kết hợp BM25 với bi-encoder (Hybrid).
+| Giảng viên | Học kỳ | Năm học |
+|---|---|---|
+| TS. Nguyễn Trọng Chỉnh | HK1 | 2026-2027 |
 
-**Tiến độ tuần 1.** Nhóm đã chuẩn hóa dữ liệu, cố định các tập câu hỏi và thống kê ngữ liệu. Các kết quả dưới đây mô tả dữ liệu dùng chung cho mọi mô hình.
+## Thành viên nhóm
+
+| Họ và tên | MSSV | Email |
+|---|---|---|
+| Đỗ Hồng Ngân | 23520994 | 23520994@gm.uit.edu.vn |
+| Đoàn Thanh Thảo | 23521466 | 23521466@gm.uit.edu.vn |
+
+## Giới thiệu đồ án
+
+**Vietnamese Legal Article Retrieval (Truy hồi điều luật tiếng Việt).** Với một câu hỏi pháp lý bằng tiếng Việt, hệ thống tìm và xếp hạng các điều luật liên quan trong kho 61.425 điều luật. Nhóm so sánh TF-IDF và BM25 với phương pháp truy hồi dùng bi-encoder, đồng thời đánh giá liệu việc kết hợp thứ hạng của BM25 và bi-encoder (Hybrid) có đưa điều luật liên quan lên gần đầu danh sách hơn hay không.
+
+**Tiến độ.** Nhóm đã chuẩn hóa dữ liệu, cố định các tập câu hỏi và chạy BM25 theo âm tiết trên tập dev. Bảng dưới dùng kết quả của 482 câu hỏi truy hồi trên toàn bộ 61.425 điều luật.
+
+## Kết quả BM25 âm tiết trên dev
+
+Nhóm chọn cấu hình BM25 âm tiết theo nDCG@10 trên 482 câu dev.
+
+| k1 | b = 0.50 | b = 0.75 | b = 0.90 |
+|---:|---:|---:|---:|
+| 0.9 | 0.537047 | 0.588045 | 0.603472 |
+| 1.2 | 0.537239 | 0.597909 | 0.605627 |
+| 1.5 | 0.537966 | 0.603246 | **0.608935** |
+
+Trong chín cấu hình, `k1=1.5, b=0.9` đạt nDCG@10 cao nhất. File xếp hạng để thử kết hợp với Dense bằng RRF là `results/bm25_syllable_k1_1.5_b_0.9_dev.csv`. Đối chứng cho thí nghiệm tách từ là `results/bm25_syllable_k1_1.2_b_0.75_dev.csv` (nDCG@10 = 0.597909).
+
+### Các độ đo chi tiết của bốn lượt chạy đã ghi nhận
+
+| k1 | b | Recall@1 | Recall@5 | Recall@10 | Recall@20 | Recall@100 | MRR@10 | nDCG@10 |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 0.9 | 0.50 | 0.374481 | 0.617220 | 0.701245 | 0.763485 | 0.853734 | 0.486790 | 0.537047 |
+| 0.9 | 0.75 | 0.407676 | 0.683610 | 0.760373 | 0.809129 | 0.902490 | 0.534381 | 0.588045 |
+| 1.5 | 0.50 | 0.380705 | 0.617220 | 0.699170 | 0.778008 | 0.863071 | 0.488424 | 0.537966 |
+| 1.5 | 0.75 | 0.430498 | 0.693983 | 0.780083 | 0.821577 | 0.906639 | 0.548390 | 0.603246 |
+
+**Thí nghiệm tiếp theo.** Dùng lượt BM25 âm tiết đã có ở `k1=1.2, b=0.75` làm đối chứng cho BM25 tách từ tiếng Việt. Tách từ cho cả câu hỏi và điều luật, giữ cùng tham số, corpus, tập dev và cách chấm. So sánh nDCG@10 và xem các câu mà thứ hạng điều liên quan thay đổi.
 
 ## Dữ liệu và cách chia tập
 
