@@ -27,17 +27,32 @@
 | BM25 âm tiết tốt nhất (k1=1.5, b=0.9) | 0.608935 | 0.552712 | 0.788382 | 0.910788 |
 | **Dense E5 (đóng băng)** | **0.702605** | 0.657205 | 0.848548 | 0.947095 |
 
-Dense vượt BM25 trên mọi độ đo ở dev (+0,094 nDCG@10) — tín hiệu tốt cho RQ2/RQ3, kỳ vọng RRF còn cao hơn. Đối chứng cho bootstrap (T5) tạm xác định là BM25 k1=1.5,b=0.9 (nDCG@10 cao nhất trong các phương pháp đơn tính tới lúc này) — sẽ chốt lại khi có đủ ứng viên trước khi chạy test.
+Dense vượt BM25 trên mọi độ đo ở dev (+0,094 nDCG@10) — tín hiệu tốt cho RQ2/RQ3.
+
+**T4 — Hybrid RRF:** xong, đã kiểm chứng. Script: `src/fusion/rrf.py` (chuẩn thư viện, không cần GPU, chạy local qua `.venv`). `RRF(d) = Σ 1/(60+rank)` trên mỗi nhánh, hằng số 60 cố định (không cho đổi qua CLI, đúng đặc tả), hòa điểm xếp theo `doc_id` tăng dần. Input: `results/bm25_syllable_k1_1.5_b_0.9_dev.csv` (A) + `results/dense_e5_dev.csv` (B) → output `results/rrf_dev.csv` (48.201 dòng), chấm bằng `src/evaluate.py` → `results/rrf_dev_metrics.txt`.
+
+| | nDCG@10 | MRR@10 | Recall@1 | Recall@5 | Recall@10 | Recall@20 | Recall@100 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| BM25 (k1=1.5, b=0.9) | 0.608935 | 0.552712 | 0.426349 | 0.708506 | 0.788382 | 0.844398 | 0.910788 |
+| **Dense E5 (đóng băng)** | **0.702605** | **0.657205** | **0.545643** | 0.791494 | 0.848548 | 0.894191 | 0.947095 |
+| Hybrid RRF | 0.695126 | 0.644857 | 0.526971 | **0.795643** | **0.853734** | **0.899378** | **0.967842** |
+
+**Nhận xét (RQ3) — kết quả KHÔNG đơn giản, báo đúng thực tế:** RRF không vượt Dense đơn lẻ ở nDCG@10 (0,695 so với 0,703) và MRR@10/Recall@1, nhưng vượt rõ ở Recall@5/10/20/100. Trên dev, Dense một mình hiện là phương pháp tốt nhất theo độ đo chính (nDCG@10) — không phải RRF. Chênh lệch RRF vs Dense ở nDCG@10 rất nhỏ (0,008), **cần bootstrap (T5) để biết có ý nghĩa thống kê hay chỉ là nhiễu** trước khi kết luận bất cứ điều gì chắc chắn trong báo cáo.
+
+**Quyết định đối chứng cho T5 (bootstrap):** đối chứng = **Dense E5 (đóng băng)**, vì đang là phương pháp đơn có nDCG@10 cao nhất trên dev (không phải BM25) — đúng quy tắc CLAUDE.md mục 5 ("đối chứng = phương pháp đơn có nDCG@10 cao nhất trên dev, chọn trước khi chạy test").
 
 **Lưu ý hạ tầng:** đã commit + push lên GitHub bằng tài khoản `DoanThao013`:
 - `a5a21dc`: `src/dense/` (token_stats.py, encode_corpus.py), `annotation/`, `results/e5_token_length_stats.csv`.
 - `12b7d1f`: `docs/progress-b.md`, `results/dense/encode_sample/timing_report.json` (kết quả encode mẫu).
 - `f982417`: `src/dense/retrieve_top100.py`.
-- (commit tiếp theo): `results/dense_e5_dev.csv`, `results/dense_e5_dev_metrics.txt`.
+- `8037bf9`: `results/dense_e5_dev.csv`, `results/dense_e5_dev_metrics.txt`.
+- (commit tiếp theo): `src/fusion/rrf.py`, `results/rrf_dev.csv`, `results/rrf_dev_metrics.txt`.
 
 `data/processed/corpus.jsonl` bị `.gitignore` nên trên Kaggle/Colab phải tải `data/raw/corpus.jsonl` (curl, revision `12d76d4d04b94ceada970fcfbe7fec20bfa97389`) rồi chạy `python src/prepare_corpus.py` trước khi encode; tương tự cần `data/raw/queries.jsonl` + `prepare_queries.py`, `data/raw/qrels/{train,test}.jsonl` + `prepare_qrels.py` trước khi chấm điểm.
 
+**Lưu ý môi trường local (Windows):** console mặc định dùng codepage cp1252, in tiếng Việt từ Python sẽ lỗi `UnicodeEncodeError`. `rrf.py` đã tự `sys.stdout.reconfigure(encoding="utf-8")`. Với `evaluate.py` (file của A, không tự sửa), chạy kèm biến môi trường: `PYTHONIOENCODING=utf-8 ./.venv/Scripts/python.exe src/evaluate.py ...`.
+
 **Việc còn dở / tiếp theo:**
 - Bước 4: ghi model card E5 (revision, tokenizer, dữ liệu huấn luyện tác giả công bố, mức bất định trùng dữ liệu) — chưa làm.
-- T4: Hybrid RRF — gộp `results/bm25_syllable_k1_1.5_b_0.9_dev.csv` (A) với `results/dense_e5_dev.csv` (B), chạy local (không cần GPU).
+- T5: chạy test một lần (sau khi khóa cấu hình), bootstrap RRF vs Dense E5 (đối chứng đã chốt ở trên).
 - Bước 1 (đọc tay 22+5 qid) vẫn để sau, phải làm **trước khi xem thứ hạng** theo đúng quy trình tránh confirmation bias.
