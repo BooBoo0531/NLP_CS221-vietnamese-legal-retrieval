@@ -1,0 +1,19 @@
+{
+  "n_docs": 3000,
+  "sample_size_arg": 3000,
+  "batch_size": 32,
+  "chunk_size": 500,
+  "fp16": true,
+  "device_info": {
+    "torch_version": "2.11.0+cu130",
+    "cuda_available": true,
+    "device_name": "Tesla T4",
+    "cuda_version": "13.0"
+  },
+  "this_run_seconds": 12.636505603790283,
+  "total_seconds_all_sessions": 12.615248441696167,
+  "docs_per_second": 237.807445003171,
+  "estimated_full_corpus_seconds": 258.29721184372903,
+  "estimated_full_corpus_minutes": 4.304953530728818,
+  "estimated_full_corpus_embeddings_mb_fp16": 89.97802734375
+}
