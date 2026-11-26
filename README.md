@@ -144,9 +144,28 @@ python src/plot_lengths.py
 
 Ví dụ kiểm tra kết quả: `src/prepare_qrels.py` phải báo **482 câu hỏi và 488 cặp nhãn** cho dev. Khi chạy một mô hình trên dev, lấy câu hỏi theo `data/splits/dev_ids.txt`, xếp hạng trên toàn bộ corpus và chấm bằng `data/processed/qrels/dev.jsonl`. Định dạng kết quả nhóm thống nhất là `qid, doc_id, rank, score`, với hạng 1 là kết quả đứng đầu.
 
-## Tái tạo kết quả Dense/Hybrid (B)
+## Chạy lại các file của B
 
-Cần GPU (khuyến nghị Kaggle Notebook, GPU T4, bật Internet) vì bước encode E5. Sau bước 1-3 ở trên (đã có `data/processed/corpus.jsonl`, `queries.jsonl`, `qrels/`):
+### Để ra RRF trên test (việc A thực sự cần chạy, không cần GPU)
+
+Run Dense trên test (`results/dense_e5_segmented_test.csv`) **đã có sẵn trong repo, đã commit** — không ai cần encode lại chỉ để làm RRF. Sau khi A có file BM25 top-100 trên test, chỉ cần 1 lệnh CPU, không cần GPU, không cần cài sentence-transformers/torch:
+
+```bash
+python src/fusion/rrf.py \
+    --bm25-run results/<tên_file_bm25_test_của_A>.csv \
+    --dense-run results/dense_e5_segmented_test.csv \
+    --output results/rrf_segmented_test.csv
+
+python src/evaluate.py --qrels data/processed/qrels/test.jsonl --run results/rrf_segmented_test.csv
+```
+
+`rrf.py` chỉ dùng thư viện chuẩn Python (csv/argparse), không có tham số nào để chỉnh (hằng số RRF k=60 cố định trong code) — chạy đúng lệnh trên luôn ra đúng một kết quả, không có chỗ để "điều chỉnh".
+
+### Tái tạo toàn bộ Dense từ đầu (cần GPU — KHÔNG bắt buộc, chỉ cần nếu muốn tự kiểm chứng số liệu hoặc cho phần "chạy lại ví dụ của nhau" ở tuần 6)
+
+Toàn bộ pipeline dưới đây **xác định (deterministic), không có bước ngẫu nhiên nào** — model đóng băng với revision pin cố định `d128750597153bb5987e10b1c3493a34e5a4502a`, chia đoạn theo quy tắc cố định, không có tham số nào cần "chọn" hay "tinh chỉnh". **Chạy đúng nguyên các lệnh sau, không đổi `--batch-size`/`--chunk-size`/model**, sẽ ra đúng số liệu B đã báo cáo (sai số rất nhỏ ở chữ số thập phân cuối có thể xảy ra do khác phần cứng GPU, không ảnh hưởng số liệu làm tròn trong báo cáo).
+
+Cần GPU (khuyến nghị Kaggle Notebook, GPU T4, bật Internet). Sau bước 1-3 ở trên (đã có `data/processed/corpus.jsonl`, `queries.jsonl`, `qrels/`):
 
 ```bash
 pip install sentence-transformers
@@ -158,24 +177,21 @@ python src/dense/segment_long_articles.py
 # Encode (GPU) -- bản chính thức dùng chia đoạn, không dùng encode_corpus.py (bản cắt đầu) cho kết quả cuối
 python src/dense/encode_segments.py
 
-# Top 100 theo từng split (điểm điều = max điểm các đoạn)
+# Top 100 trên dev (test đã khóa, không chạy lại trừ khi thực sự cần kiểm chứng)
 python src/dense/retrieve_top100_segmented.py --split dev
-python src/dense/retrieve_top100_segmented.py --split test   # chỉ chạy 1 lần, sau khi đã khóa cấu hình
 
-# Hybrid RRF (CPU, không cần GPU) -- cần file run BM25 cùng split từ A
-python src/fusion/rrf.py --bm25-run results/bm25_syllable_k1_1.5_b_0.9_dev.csv \
-    --dense-run results/dense_e5_segmented_dev.csv --output results/rrf_segmented_dev.csv
-
-python src/evaluate.py --qrels data/processed/qrels/dev.jsonl --run results/rrf_segmented_dev.csv
+python src/evaluate.py --qrels data/processed/qrels/dev.jsonl --run results/dense_e5_segmented_dev.csv
 ```
+
+**Kiểm tra đã tái tạo đúng:** lệnh `evaluate.py` cuối phải in ra đúng `nDCG@10 0.764478` (xem `results/dense_e5_segmented_dev_metrics.txt`). Nếu ra số khác, nhiều khả năng do đổi tham số mặc định hoặc chưa pin đúng revision model — đối chiếu lại với các giá trị mặc định trong `src/dense/encode_segments.py` chứ không tự đổi số liệu báo cáo.
 
 | File đầu ra | Nội dung |
 |---|---|
 | `results/e5_token_length_stats.csv` | Tỷ lệ bị cắt >512 token, toàn corpus và doc_id có nhãn dev |
 | `results/dense/segments.jsonl` | Các đoạn đã chia (không commit, tái tạo bằng script, ~125MB) |
 | `results/dense/corpus_segmented/embeddings.npy` + `doc_ids.txt` | Embedding từng đoạn (không commit, chỉ tồn tại nơi đã encode) |
-| `results/dense_e5_segmented_{dev,test}.csv` | Run Dense top 100, đã commit |
-| `results/rrf_segmented_dev.csv` | Run Hybrid RRF top 100, đã commit |
+| `results/dense_e5_segmented_{dev,test}.csv` | Run Dense top 100, đã commit sẵn |
+| `results/rrf_segmented_dev.csv` | Run Hybrid RRF top 100 trên dev, đã commit sẵn |
 | `results/rrf_rank_shift_segmented_dev.csv` | Phân tích ca RRF kéo lên/đẩy xuống theo từng cặp (qid, doc_id) |
 
 Chi tiết đầy đủ (ablation, revision model, lỗi dữ liệu phát hiện được...): xem mục "Kết quả Dense (E5) và Hybrid RRF" ở trên và `docs/progress-b.md`.
