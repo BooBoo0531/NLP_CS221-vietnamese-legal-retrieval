@@ -6,6 +6,16 @@
 
 **Sửa hạ tầng:** `src/dense/encode_corpus.py` và `src/dense/retrieve_top100.py` trước đây KHÔNG ghi revision model đã dùng (chỉ ghi tên model + GPU), vi phạm CLAUDE.md mục 3 ("Ghi revision mô hình... cho mọi lượt chạy"). Đã sửa: pin `revision=d128750597153bb5987e10b1c3493a34e5a4502a` khi load `SentenceTransformer`, ghi vào `timing_report.json` (encode) và file `.meta.json` mới bên cạnh mỗi run CSV (retrieve_top100). Đã bổ sung hồi tố `model_name`/`model_revision` vào `results/dense/encode_sample/timing_report.json` và tạo `results/dense_e5_dev.meta.json` cho run đã chạy trước đó (ghi rõ là suy luận lại sau, không phải pin lúc chạy thật).
 
+**T4 — kiểm tra ca RRF kéo lên/đẩy xuống (bằng chứng RQ3):** xong. Script: `src/fusion/rank_shift_analysis.py`, chạy local. Với "phương pháp đơn tốt nhất" tính riêng từng cặp (qid, doc_id) = hạng tốt hơn giữa BM25/Dense cho đúng cặp đó (không cố định một nhánh cho cả dev). Output: `results/rrf_rank_shift_dev.csv` (488 cặp).
+
+| | Số cặp | Tỷ lệ |
+|---|---:|---:|
+| RRF bằng phương pháp đơn tốt nhất | 293 | 60,0% |
+| **RRF đẩy xuống** | 153 | 31,4% |
+| **RRF kéo lên** | 42 | 8,6% |
+
+**Giải thích cơ chế (quan trọng cho báo cáo):** RRF đẩy xuống nhiều gấp ~3,6 lần số lần kéo lên — khớp với việc nDCG@10 của RRF (0,695) thấp hơn Dense một mình (0,703). Nhưng đa số ca đẩy xuống chỉ tụt vài hạng trong top 10 (không đổi trạng thái Recall@10), trong khi một phần ca kéo lên đưa hẳn một tài liệu từ ngoài top 10/top 100 vào bên trong — nên Recall@10/20/100 tổng thể vẫn nhích lên dù nDCG giảm. Ví dụ minh họa đã chọn theo quy tắc cố định trước (3 ca đầu mỗi nhóm theo qid tăng dần) có trong console log, chưa đọc nội dung thật của các qid này (cần làm khi viết phần phân tích lỗi, kết hợp với bước 1 đọc tay).
+
 ## 2026-11-25
 
 **Bước 0 — dựng dữ liệu cục bộ:** xong (trước phiên này).

@@ -1,0 +1,489 @@
+qid,doc_id,bm25_rank,dense_rank,rrf_rank,category
+002a8ef45186d00d026d1dbb072b044b,15/2019/tt-byt+26,5,3,4,RRF tệ hơn (đẩy xuống)
+00c7583140aad533cb7d0d5a0dac9155,11/2019/tt-bct+7,1,1,1,RRF bằng phương pháp đơn tốt nhất
+015cde571c5fa8768a44e31d7f6f005f,88/2020/nđ-cp+21,1,2,2,RRF tệ hơn (đẩy xuống)
+0202f4503f734361cede3c679872b2cc,126/2018/tt-btc+8,1,1,1,RRF bằng phương pháp đơn tốt nhất
+02a0f8f38d832b429f2cabf6ef2c7f04,01/2020/tt-tandtc+27,1,1,1,RRF bằng phương pháp đơn tốt nhất
+034dfc57906fbbbb73a955afff850bc1,07/2018/tt-bkhđt+41,30,1,6,RRF tệ hơn (đẩy xuống)
+039a08ae0e5f3b15bae7b89bc0246b02,18/2019/nđ-cp+11,1,1,1,RRF bằng phương pháp đơn tốt nhất
+04d33cd81bd8592ffa7687255f871aaf,139/2017/nđ-cp+15,2,2,2,RRF bằng phương pháp đơn tốt nhất
+04d39fdce84f5cada541e7ac3ea28c98,36/2018/tt-byt+2,>100,1,39,RRF tệ hơn (đẩy xuống)
+04e909b3f16852b0325175e56ff09537,36/2020/nđ-cp+6,1,2,1,RRF bằng phương pháp đơn tốt nhất
+04f722029dacacf074b0bf1da761d2c7,28/2017/tt-bgdđt+8,5,8,2,RRF tốt hơn (kéo lên)
+0604dc5370e1966d112ae9d32acc9fa9,38/2020/nđ-cp+3,1,1,1,RRF bằng phương pháp đơn tốt nhất
+06556f593c9aa0e0d58bdce58500ef44,94/2019/nđ-cp+2,79,31,34,RRF tệ hơn (đẩy xuống)
+085b2072801e92842ca695b078c7a2cf,04/2021/nđ-cp+15,1,1,1,RRF bằng phương pháp đơn tốt nhất
+085db03fae37bb6249522e26e5c93f13,155/2020/nđ-cp+259,7,8,2,RRF tốt hơn (kéo lên)
+088fdab6472a3cbd8d0ab15f0a7de5ce,54/2019/qh14+42,74,1,12,RRF tệ hơn (đẩy xuống)
+08baf2e8d120c2984d9bfe4a4a2b58af,142/2017/tt-btc+5,6,83,23,RRF tệ hơn (đẩy xuống)
+08d76208dad8dde96a06d523746e4a1b,01/2015/ttlt-vpcp-bnv+2,5,30,2,RRF tốt hơn (kéo lên)
+0a8307bac487fe4f9cf001bc2baa14c4,79/2018/nđ-cp+18,1,1,1,RRF bằng phương pháp đơn tốt nhất
+0aad55a0b7030f8e5e8f7ee38b63bd7d,20/2020/nđ-cp+11,28,>100,56,RRF tệ hơn (đẩy xuống)
+0b50d29c4ff1970418db4666d1d86b7a,20/2018/tt-bvhttdl+5,50,2,7,RRF tệ hơn (đẩy xuống)
+0c5b0bd8be4c2ca410e70a1bfdfd6426,26/2019/nđ-cp+3,4,1,1,RRF bằng phương pháp đơn tốt nhất
+0cd9b916a13ec5b2b34ca7b25ab55e14,58/2010/qh12+51,60,1,2,RRF tệ hơn (đẩy xuống)
+0d2af7632b34796855f3853c4eda9525,41/2019/qh14+115,10,2,4,RRF tệ hơn (đẩy xuống)
+0da66511d76c26cb28cb52b24d691749,155/2020/nđ-cp+66,2,2,2,RRF bằng phương pháp đơn tốt nhất
+0dab0d07d5da11be4c3f22d66619820e,05/2021/nđ-cp+37,1,1,1,RRF bằng phương pháp đơn tốt nhất
+0dc6aad9267ed2fb232a1277aaa860f8,12/2019/tt-bct+8,1,1,1,RRF bằng phương pháp đơn tốt nhất
+0e96227cfe8502a39d8eda2cc880d204,33/2019/tt-bgtvt+20,3,1,1,RRF bằng phương pháp đơn tốt nhất
+0f46c9bccfe3afdc901c33a55110c1e9,115/2018/nđ-cp+11,1,1,1,RRF bằng phương pháp đơn tốt nhất
+0fa6eb5aa91fe91765aee11ff4c1b153,49/2014/tt-bnnptnt+16,1,1,1,RRF bằng phương pháp đơn tốt nhất
+0fb5f40456fd6358242503eb38002ddd,125/2018/tt-btc+4,2,1,1,RRF bằng phương pháp đơn tốt nhất
+0fb94f4a6e6bd2d43c8ce1c2ccf6152b,54/2019/nđ-cp+9,1,1,1,RRF bằng phương pháp đơn tốt nhất
+0fc78abcb1d89de814762276e42249bf,59/2019/nđ-cp+6,19,1,3,RRF tệ hơn (đẩy xuống)
+10f2b87c0ce18aa91f8acb674ce34abb,100/2019/nđ-cp+12,4,1,2,RRF tệ hơn (đẩy xuống)
+1145e32146becb3d6dcae37e7055e06d,54/2019/nđ-cp+9,1,1,1,RRF bằng phương pháp đơn tốt nhất
+120fcf8579bde30e38669aed7eabf477,95/2018/nđ-cp+11,2,1,2,RRF tệ hơn (đẩy xuống)
+12a5a66af14c73d8418d9a1432733b40,33/2018/tt-bgtvt+36,1,1,1,RRF bằng phương pháp đơn tốt nhất
+12cb8b3534bbc346e00126e45704b4fe,63/2020/nđ-cp+20,1,1,1,RRF bằng phương pháp đơn tốt nhất
+1409c388d28ba3e54ec3ded95be73025,100/2019/nđ-cp+44,1,1,1,RRF bằng phương pháp đơn tốt nhất
+14abaff7da7786919278833e8114b56a,29/2019/tt-blđtbxh+5,2,1,1,RRF bằng phương pháp đơn tốt nhất
+14b25492501510e80330d1f2e353e358,18/2019/nđ-cp+3,1,1,1,RRF bằng phương pháp đơn tốt nhất
+151041b72fc8fff65064bbd45ea5377e,28/2020/nđ-cp+14,1,3,1,RRF bằng phương pháp đơn tốt nhất
+152a0b07eda7149a75936ad02a41eb69,03/2003/qh11+12,23,2,7,RRF tệ hơn (đẩy xuống)
+1577337883ccbd1b7ec0cd6e620266b0,08/2019/tt-blđtbxh+30,13,6,5,RRF tốt hơn (kéo lên)
+15cf1e23471d118aa07fa5b5984d4e7f,69/2018/tt-btc+10,6,1,2,RRF tệ hơn (đẩy xuống)
+161a69edb9a803e2507224205bba12e4,51/2011/tt-bgdđt+7,>100,24,44,RRF tệ hơn (đẩy xuống)
+1671f5975fc66940fd05d01ac0fd2214,121/2018/tt-btc+6,1,2,1,RRF bằng phương pháp đơn tốt nhất
+16a7b24daaa69c58b1f4c16e4e3b9439,82/2020/nđ-cp+15,>100,10,22,RRF tệ hơn (đẩy xuống)
+17c41fb62e9e8199bfb69804bd7ddb22,75/2019/nđ-cp+17,1,1,1,RRF bằng phương pháp đơn tốt nhất
+17f5547e5a58e77de3e5551a64cfb0be,11/2011/qđ-ttg+4,1,1,1,RRF bằng phương pháp đơn tốt nhất
+17fa4b65c97471951ec3c086fe953a97,15/2020/nđ-cp+8,5,1,2,RRF tệ hơn (đẩy xuống)
+1809b67d231c8282904e02138efe5384,59/2019/nđ-cp+82,>100,49,94,RRF tệ hơn (đẩy xuống)
+1828361c7032b61da67a604432e600ac,164/2018/nđ-cp+13,1,1,1,RRF bằng phương pháp đơn tốt nhất
+18d7a37c84f918451752cb50d2e22dc0,10/2020/nđ-cp+9,12,2,5,RRF tệ hơn (đẩy xuống)
+1924c7ae6995609d6104608512b8f93b,34/2017/tt-byt+2,1,1,1,RRF bằng phương pháp đơn tốt nhất
+1988cc5d15989838e974c8401b64ffa5,09/2015/tt-bxd+12,3,1,2,RRF tệ hơn (đẩy xuống)
+1a99570e8b6706d10bf1149b789cd2ac,44/2020/nđ-cp+14,3,1,1,RRF bằng phương pháp đơn tốt nhất
+1af9b014fe3e8156e1e5ff8ea9149f16,03/2020/tt-bgdđt+5,13,15,6,RRF tốt hơn (kéo lên)
+1bb4ae1debdc7c13eea600712cfcf202,19/2020/tt-bca+10,1,1,1,RRF bằng phương pháp đơn tốt nhất
+1bef3be1686e5da9fdf2af7b0296561d,100/2019/nđ-cp+16,5,6,4,RRF tốt hơn (kéo lên)
+1da9b523479b6bf650e3253e58e5dc39,04/2019/tt-bkhcn+7,1,1,1,RRF bằng phương pháp đơn tốt nhất
+1db62b624ae2b87f0f3915272c6b593c,12/2019/tt-bct+7,20,5,10,RRF tệ hơn (đẩy xuống)
+1dda095508f14f09e3728b7b8e513664,100/2019/nđ-cp+80,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+1e0e3da3aa08776445e4ae2375cc8faa,16/2020/tt-bqp+5,1,4,1,RRF bằng phương pháp đơn tốt nhất
+1eb074da6edd4e778c5dfb50b84132c7,100/2019/nđ-cp+17,1,5,3,RRF tệ hơn (đẩy xuống)
+1ecb4502c1bbe3df971b66232ab7c54c,91/2018/nđ-cp+33,1,1,1,RRF bằng phương pháp đơn tốt nhất
+1ed07271fb0e3a866ade732e14b4ae2e,09/2019/qđ-ttg+1,1,1,1,RRF bằng phương pháp đơn tốt nhất
+1f92856c254dd897fa0725e870f84c33,50/2019/nđ-cp+5,1,2,1,RRF bằng phương pháp đơn tốt nhất
+205f301fb8f639e508a3f32fd443a62c,59/2020/qh14+189,1,1,1,RRF bằng phương pháp đơn tốt nhất
+2201b6f968591dd1958a348bacd1a5cc,54/2019/qh14+60,2,2,2,RRF bằng phương pháp đơn tốt nhất
+2245b5e5d39a582d1f5e98962205501c,101/2020/tt-btc+3,1,1,1,RRF bằng phương pháp đơn tốt nhất
+22c0eb519696248500086ea33857f814,37/2010/tt-byt+23,>100,2,20,RRF tệ hơn (đẩy xuống)
+22c36e6b1ceda61d3272b8d536bb7a34,69/2018/nđ-cp+53,1,1,1,RRF bằng phương pháp đơn tốt nhất
+22e0f80f1bf16b1ac048aaded9f5eea7,66/2019/nđ-cp+14,1,1,1,RRF bằng phương pháp đơn tốt nhất
+2338cdf6673528d7fc542b394d3d0a81,11/2020/tt-bgtvt+3,6,1,1,RRF bằng phương pháp đơn tốt nhất
+25552572230fd90ddcb19764eb0da6a8,28/2018/tt-btc+8,1,1,1,RRF bằng phương pháp đơn tốt nhất
+25687ee1ba09a1072fc274965736c135,17/2016/tt-bqp+15,26,3,7,RRF tệ hơn (đẩy xuống)
+257f45cbd69b2f446b391570b50f4052,155/2020/nđ-cp+196,6,2,2,RRF bằng phương pháp đơn tốt nhất
+265ce56261d870890baa8cce75308128,05/2014/tt-ttcp+6,5,1,1,RRF bằng phương pháp đơn tốt nhất
+274fbac6578a865a68884347f6f9f615,38/2018/tt-bnnptnt+5,>100,63,91,RRF tệ hơn (đẩy xuống)
+27c7bcce295463fdbc37c14940791550,02/2018/tt-bkhđt+8,1,1,1,RRF bằng phương pháp đơn tốt nhất
+28c48631c7ceccbdaefee4a208b3d00b,167/2013/nđ-cp+59,1,1,1,RRF bằng phương pháp đơn tốt nhất
+28e0c2daa83215825973be31140997bb,59/2019/nđ-cp+37,20,1,4,RRF tệ hơn (đẩy xuống)
+2903b849c10c2683f78a4f5ea32bad94,01/2020/tt-tandtc+22,1,1,1,RRF bằng phương pháp đơn tốt nhất
+2970d9e9d3244aba7c668149a2ee7503,82/2020/nđ-cp+10,3,1,1,RRF bằng phương pháp đơn tốt nhất
+29c558dd970f9c41e0fde6f87e75ed37,16/2017/qh14+41,2,1,1,RRF bằng phương pháp đơn tốt nhất
+2a7c6a02609eacf43b0a8080d425912d,24/2020/nđ-cp+8,2,2,2,RRF bằng phương pháp đơn tốt nhất
+2a9b48182de10e21ad13383783299d38,07/2019/tt-bnv+6,1,4,1,RRF bằng phương pháp đơn tốt nhất
+2b59a9371f4357a26234175b21064a42,19/2020/qđ-ttg+11,2,1,1,RRF bằng phương pháp đơn tốt nhất
+2c8bb1046fb9e2f562c1948eb0f3acaa,10/2020/nđ-cp+19,2,1,1,RRF bằng phương pháp đơn tốt nhất
+2c97eb33a31c107c079b60c9a3a97921,100/2019/nđ-cp+20,1,1,1,RRF bằng phương pháp đơn tốt nhất
+2cbf8d6cb33711d6b20fc125506a6a82,100/2019/nđ-cp+10,1,2,1,RRF bằng phương pháp đơn tốt nhất
+2dc6ba338fc37fbc73443e19e0177e7b,33/2018/tt-bgtvt+11,6,2,4,RRF tệ hơn (đẩy xuống)
+2e62ef32b6c384b8477c3df12792225f,02/2018/tt-bkhđt+4,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+2eb546f2d60ab98eda2483ae5eefc70a,100/2019/nđ-cp+82,90,>100,>100,RRF tệ hơn (đẩy xuống)
+2f81d6a7854ea5cefa667db53a1239b0,68/2020/qh14+2,1,3,1,RRF bằng phương pháp đơn tốt nhất
+2fe7a727c2432d25f203e235e3ba6655,15/2020/nđ-cp+8,1,1,1,RRF bằng phương pháp đơn tốt nhất
+30ade1c26b55ed631a1e36fb8988c520,43/2019/qh14+13,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+31e4065c9a4648fea83b2b96993e797c,182/2009/tt-btc+5,2,1,1,RRF bằng phương pháp đơn tốt nhất
+323cebc6a6c8ed908e34906830be348a,02/2020/tt-byt+4,4,1,2,RRF tệ hơn (đẩy xuống)
+337aa31df98a145eb7070f5dad687baa,25/2019/tt-bnnptnt+7,12,1,4,RRF tệ hơn (đẩy xuống)
+35e914e2d34f5a8286bb3f204801d258,100/2019/nđ-cp+10,1,1,1,RRF bằng phương pháp đơn tốt nhất
+37df17ea1a0fb21201a7276417b27896,43/2019/qh14+5,39,15,8,RRF tốt hơn (kéo lên)
+383d04dfac51dda6b2b7e9ebd6336052,20/2021/nđ-cp+11,1,2,2,RRF tệ hơn (đẩy xuống)
+38b662b6921928ff5b8de4897b30e978,05/1999/nđ-cp+6,33,1,2,RRF tệ hơn (đẩy xuống)
+38b662b6921928ff5b8de4897b30e978,106/2013/nđ-cp+1,6,9,1,RRF tốt hơn (kéo lên)
+38cd0500cc8e892b4a635619e812c91f,146/2018/nđ-cp+3,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+38e36e66290718e2df7321c8cf6b6de2,51/2015/tt-btnmt+6,1,6,2,RRF tệ hơn (đẩy xuống)
+39ba14a85e8ed6dca9b1b87a7c29fe60,03/2019/tt-btp+12,1,1,1,RRF bằng phương pháp đơn tốt nhất
+3a5affe774beaa181f409c2419183781,95/2014/nđ-cp+3,1,1,1,RRF bằng phương pháp đơn tốt nhất
+3a74732a1e686c1950f0ad7356dad6e3,61/2018/nđ-cp+14,2,1,1,RRF bằng phương pháp đơn tốt nhất
+3aac71c99225fce1bd8d7023e8c7b514,48/2019/nđ-cp+14,10,2,5,RRF tệ hơn (đẩy xuống)
+3b9e07cf8e9e5a5ef4c7475470d91a23,221/2013/nđ-cp+24,15,>100,60,RRF tệ hơn (đẩy xuống)
+3c3b29cb91c3472f0e0d4b7b4b3cc9c2,01/2019/tt-bnv+7,>100,1,27,RRF tệ hơn (đẩy xuống)
+3cf73260a4e2bfe9c195494afa3896a2,72/2020/nđ-cp+8,2,1,1,RRF bằng phương pháp đơn tốt nhất
+3d432aee7b061571b59ac47958c42cd1,81/2019/tt-btc+3,1,6,2,RRF tệ hơn (đẩy xuống)
+3dce890da506efd5fcbcca1943423188,01/2016/qh14+15,1,5,2,RRF tệ hơn (đẩy xuống)
+3de6f344318086251098f968bd2e1aef,43/2017/tt-btc+10,1,1,1,RRF bằng phương pháp đơn tốt nhất
+3e891a11725a39dfd5175ab9dbf94e44,01/2016/tt-bca+2,>100,8,37,RRF tệ hơn (đẩy xuống)
+3e891a11725a39dfd5175ab9dbf94e44,01/2016/tt-bca+5,63,50,21,RRF tốt hơn (kéo lên)
+3f0df75e4a835d623d79fd3291330ff2,23/2021/nđ-cp+9,2,1,1,RRF bằng phương pháp đơn tốt nhất
+40456b64380aacd000ff2afcb8b6781b,18/2019/nđ-cp+3,2,2,2,RRF bằng phương pháp đơn tốt nhất
+40daba1e65415d4cf96a972227ab63d1,25/2012/tt-bca+9,2,1,1,RRF bằng phương pháp đơn tốt nhất
+41c8ef088b82790a835ddc744941e654,17/2016/tt-bqp+15,44,58,43,RRF tốt hơn (kéo lên)
+41db27ea8cc925d5624b805f13ecc1cb,142/2020/nđ-cp+13,1,5,1,RRF bằng phương pháp đơn tốt nhất
+4271af48f2a5cb1c93a84b25843e3417,65/2018/nđ-cp+13,2,1,1,RRF bằng phương pháp đơn tốt nhất
+427b871cf826f89f35799afbfe639fd9,82/2020/nđ-cp+15,8,1,3,RRF tệ hơn (đẩy xuống)
+43f7f05cb19c4909dbf38101809e321c,35/2019/nđ-cp+12,1,1,1,RRF bằng phương pháp đơn tốt nhất
+44c0dfe02bf7278c8414500bb0685d9b,59/2020/qh14+206,6,1,3,RRF tệ hơn (đẩy xuống)
+46fdb180a91b5d718b354286439ed08d,11/2021/nđ-cp+18,1,2,1,RRF bằng phương pháp đơn tốt nhất
+478de487fe79e2b75ecb626d67a410a1,55/2019/nđ-cp+7,5,2,3,RRF tệ hơn (đẩy xuống)
+479834554f3715fe9d3c41bc178942d9,71/2018/nđ-cp+12,1,1,1,RRF bằng phương pháp đơn tốt nhất
+480a1f7fdb372e372673810f1b77d58a,100/2019/nđ-cp+11,3,1,2,RRF tệ hơn (đẩy xuống)
+4824d7b07490cc5bdeff5367429cfce3,91/2015/qh13+441,4,1,1,RRF bằng phương pháp đơn tốt nhất
+487de84c8f9890314857d44b20f7f3bf,155/2020/nđ-cp+159,2,2,2,RRF bằng phương pháp đơn tốt nhất
+4e7e221de1ddbfa2f7b2be5c78e1ceff,82/2018/nđ-cp+30,1,1,1,RRF bằng phương pháp đơn tốt nhất
+4e8a3b8819768b1e027025692909d149,23/2018/tt-bct+7,1,1,1,RRF bằng phương pháp đơn tốt nhất
+4edcae15b9cc6fa2c457701014921cda,17/2018/tt-bgtvt+3,2,3,2,RRF bằng phương pháp đơn tốt nhất
+4f212f216995f86f4ac2f833746f52d0,27/2019/nđ-cp+8,1,1,1,RRF bằng phương pháp đơn tốt nhất
+4f33a51aceee9cd21742ef0c2a432dac,36/2020/nđ-cp+8,1,1,1,RRF bằng phương pháp đơn tốt nhất
+4fe6d45b402a71a9fcf71c6ff7e55a35,43/2019/qh14+90,>100,2,17,RRF tệ hơn (đẩy xuống)
+5015006948e3a6a4f2d8296464c6c0a8,120/2020/tt-btc+4,1,1,1,RRF bằng phương pháp đơn tốt nhất
+50a4960806c8c9e9868998a7392ba055,100/2019/nđ-cp+11,3,3,1,RRF tốt hơn (kéo lên)
+50e9d5b4407218b37fb290a05cea7890,102/2017/nđ-cp+5,2,11,4,RRF tệ hơn (đẩy xuống)
+517ab325294850c85187177753826eb6,27/2019/nđ-cp+51,3,1,1,RRF bằng phương pháp đơn tốt nhất
+51accd2ee22982acda8b865007f981c2,100/2019/nđ-cp+16,5,1,2,RRF tệ hơn (đẩy xuống)
+520b939a4b13c0c401ed00f8efc3d08b,62/2020/nđ-cp+7,6,1,1,RRF bằng phương pháp đơn tốt nhất
+524264721ca7578b8b8e574371c6d7d2,100/2019/nđ-cp+32,1,6,2,RRF tệ hơn (đẩy xuống)
+53230a4037c4cd6fbce048566e7fc73d,29/2015/nđ-cp+31,1,5,2,RRF tệ hơn (đẩy xuống)
+543d44236fbe928874de231b567a3bea,100/2019/nđ-cp+72,1,1,1,RRF bằng phương pháp đơn tốt nhất
+55895a06721c90dffe3af6d6b95c3102,149/2003/qđ-ttg+3,1,2,1,RRF bằng phương pháp đơn tốt nhất
+55a10543d530eff0652e7e99c226c632,93/2020/nđ-cp+18,26,2,5,RRF tệ hơn (đẩy xuống)
+55d8d784320964fe84deec725f5021c6,195/2012/tt-btc+18,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+5643095dc06db60b6cae4b979b6eebd9,31/2019/nđ-cp+7,1,1,1,RRF bằng phương pháp đơn tốt nhất
+566209e4ade0b810bef680b6b65a2497,159/2018/nđ-cp+20,9,4,5,RRF tệ hơn (đẩy xuống)
+576dce39638368e6c585cfec72b5265f,120/2020/tt-btc+4,51,2,9,RRF tệ hơn (đẩy xuống)
+57aadc7a4fba83189e4da911d47f4746,91/2015/qh13+29,10,15,6,RRF tốt hơn (kéo lên)
+57bfec727d45fe6a2df802b7fb35f3e6,03/2021/tt-bgdđt+5,36,2,9,RRF tệ hơn (đẩy xuống)
+59392cc639723428a6305284faee441d,205/2013/tt-btc+4,15,4,6,RRF tệ hơn (đẩy xuống)
+596a57f583bbfbb5e6b4379cf007cbbe,138/2020/nđ-cp+41,13,1,3,RRF tệ hơn (đẩy xuống)
+597984f04398656d62b197f24d336628,81/2018/nđ-cp+4,1,1,1,RRF bằng phương pháp đơn tốt nhất
+5a014a696f2d59a800a665927df8c1c9,155/2020/nđ-cp+3,62,12,25,RRF tệ hơn (đẩy xuống)
+5a4551c64c4edc920ee2e95322f5128e,35/2014/tt-bca+6,1,>100,31,RRF tệ hơn (đẩy xuống)
+5a6c8ed5d198867e4c764cff0a2695c2,29/2020/tt-btttt+3,1,1,1,RRF bằng phương pháp đơn tốt nhất
+5ad1933639e8e0dbbeb1babc3260a556,160/2016/tt-btc+4,36,19,15,RRF tốt hơn (kéo lên)
+5ae5dd649b4abfe4463d2094884fe6e5,08/2016/tt-btnmt+6,2,1,1,RRF bằng phương pháp đơn tốt nhất
+5be71a163cc05433563ebb698025614f,100/2019/nđ-cp+20,1,1,1,RRF bằng phương pháp đơn tốt nhất
+5c2ecdde15b0777d26dce17e9e5c7b41,57/2020/qh14+4,1,1,1,RRF bằng phương pháp đơn tốt nhất
+5c996f33975cf0db44002bc97dcdd3f1,109/2016/nđ-cp+9,1,1,1,RRF bằng phương pháp đơn tốt nhất
+5ca00a68fec21455ae6756f2e742ac44,01/2020/tt-bng+2,1,1,1,RRF bằng phương pháp đơn tốt nhất
+5d5b6de1b072dd0fc482bbb57da1e764,69/2020/tt-btc+6,1,1,1,RRF bằng phương pháp đơn tốt nhất
+5de7be4965aa1a0dbcf4300323a318c1,100/2019/nđ-cp+13,2,1,1,RRF bằng phương pháp đơn tốt nhất
+5f760b0a7c9296d375d9d2cfda19d49d,05/2021/nđ-cp+28,1,1,1,RRF bằng phương pháp đơn tốt nhất
+6053ae85b6e5d20d4a902258b49fb35a,49/2018/tt-btc+10,2,1,1,RRF bằng phương pháp đơn tốt nhất
+6076e9711a28efc3f1270664b8a3c7cb,85/2015/nđ-cp+3,1,1,1,RRF bằng phương pháp đơn tốt nhất
+622bc7154b047caf05ea48832dd0ff6c,52/2014/qh13+105,2,2,1,RRF tốt hơn (kéo lên)
+63fa9818769e80532419649832d37d1b,03/2020/qđ-ttg+16,6,2,3,RRF tệ hơn (đẩy xuống)
+67368578eadbedb25c03c68a3185494e,94/2020/nđ-cp+3,8,1,5,RRF tệ hơn (đẩy xuống)
+6763e23f5d6253ef41bcf1f6e2068990,100/2019/nđ-cp+16,1,1,1,RRF bằng phương pháp đơn tốt nhất
+6770c70cf17bae7af71cda90cf397593,100/2019/nđ-cp+38,1,1,1,RRF bằng phương pháp đơn tốt nhất
+67cfb2a829382db90441d38e3e0b1981,33/2016/tt-blđtbxh+6,2,1,2,RRF tệ hơn (đẩy xuống)
+68464e0278b606c41fedcd34d5ed76ef,88/2012/nđ-cp+2,1,2,2,RRF tệ hơn (đẩy xuống)
+686aba02fc4450fa33ecba655f52608e,20/2020/tt-bgdđt+6,2,1,1,RRF bằng phương pháp đơn tốt nhất
+68714ebca9d74b34adeb1369725dc5c0,21/2021/nđ-cp+18,4,1,1,RRF bằng phương pháp đơn tốt nhất
+69d00f1a68caeb9a87bb347436352e73,09/2019/tt-nhnn+11,>100,2,23,RRF tệ hơn (đẩy xuống)
+6a82ec41d9fa203005e079336988bd75,96/2020/nđ-cp+10,1,1,1,RRF bằng phương pháp đơn tốt nhất
+6b16769af8c1a2b2aaa44771f9eaaf1a,14/2019/tt-bxd+7,1,1,1,RRF bằng phương pháp đơn tốt nhất
+6b4e597f5e2f3604f275f98390de7b06,02/2020/tt-btttt+18,1,1,1,RRF bằng phương pháp đơn tốt nhất
+6c19d4507d2aeeb39fddc2d1ef45c8ba,126/2007/nđ-cp+2,3,40,13,RRF tệ hơn (đẩy xuống)
+6c746932cd456396951505f72d30c28a,100/2019/nđ-cp+20,1,1,1,RRF bằng phương pháp đơn tốt nhất
+6d33f349239214861b51cd0983bdc9c4,101/2020/tt-btc+5,16,31,10,RRF tốt hơn (kéo lên)
+6d5996c4b365e870ccae39559a4d2aff,17/2014/tt-btp+5,>100,5,34,RRF tệ hơn (đẩy xuống)
+6d5f5976f799412a9c13a8d34129fa95,158/2013/nđ-cp+19,1,1,1,RRF bằng phương pháp đơn tốt nhất
+6d88c8f4b63748a7245631fe29c099e6,01/2021/tt-btp+3,>100,5,19,RRF tệ hơn (đẩy xuống)
+6dad9db28cb42a53e8411dcc1984fab5,100/2019/nđ-cp+12,1,3,1,RRF bằng phương pháp đơn tốt nhất
+6eb67a7f4e2afc8c9453fe0e6754acd8,61/2018/nđ-cp+14,3,1,1,RRF bằng phương pháp đơn tốt nhất
+6fa97dca6a6f351e2fa8429e1c572983,01/2020/tt-btnmt+6,1,1,1,RRF bằng phương pháp đơn tốt nhất
+6fd838d8b85f9e65276a4349aaf9b2af,36/2020/nđ-cp+8,1,1,1,RRF bằng phương pháp đơn tốt nhất
+71bbce91b436c76fda0a8942cbe6f210,22/2011/tt-byt+7,11,6,4,RRF tốt hơn (kéo lên)
+71c6553e2764e77f707351ae9f1529c7,100/2019/nđ-cp+8,1,1,1,RRF bằng phương pháp đơn tốt nhất
+71f472c03f0de4cf0ed5cc9ed8f6f8c7,79/2018/nđ-cp+3,5,1,3,RRF tệ hơn (đẩy xuống)
+7208147e9648e93cca3818798973cb9b,01/2020/tt-bng+9,>100,1,13,RRF tệ hơn (đẩy xuống)
+722ab62402dd0a3c84eb194ce21e8e55,82/2020/nđ-cp+5,1,1,1,RRF bằng phương pháp đơn tốt nhất
+725ec743f6e796a79ee4d94e35b511ce,04/2010/ttlt-bqp-btc+3,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+72bc0b6827f29a90794a55a70ac7b7f9,05/2021/nđ-cp+55,2,1,1,RRF bằng phương pháp đơn tốt nhất
+7346b9a8f1d225c0dca7dac2168773bd,04/2021/tt-bgdđt+5,>100,13,44,RRF tệ hơn (đẩy xuống)
+73bc824c9398231ace8824ff1c178fd4,35/2019/nđ-cp+12,1,1,1,RRF bằng phương pháp đơn tốt nhất
+741694788de6aeee09fa2b9932a43567,115/2020/nđ-cp+17,6,11,3,RRF tốt hơn (kéo lên)
+742cb6ffa72e3d347d236aa903656930,21/2019/tt-btc+26,20,1,2,RRF tệ hơn (đẩy xuống)
+7435447acf18b58852c16303d827919b,59/2019/nđ-cp+43,4,1,1,RRF bằng phương pháp đơn tốt nhất
+74acadc03aff3a716552f266868d599a,35/2019/nđ-cp+3,2,1,1,RRF bằng phương pháp đơn tốt nhất
+7504e42a3c79eea37b7e241def96f4d6,25/2020/nđ-cp+44,2,52,10,RRF tệ hơn (đẩy xuống)
+752b567773b2be6a1043583d4871cbcb,26/2019/nđ-cp+3,3,1,1,RRF bằng phương pháp đơn tốt nhất
+75880f9d0b3a1aab8a97ff4ca2672194,40/2012/tt-bgdđt+6,3,2,2,RRF bằng phương pháp đơn tốt nhất
+771146c01bbae48aae6cbe00974da502,41/2019/qh14+193,10,3,2,RRF tốt hơn (kéo lên)
+7753e913fdea02fe2bfeaaacaf591ce4,82/2020/nđ-cp+34,2,33,1,RRF tốt hơn (kéo lên)
+786b8207b5244e0b11d413fb1126337b,02/2019/tt-bxd+9,1,1,1,RRF bằng phương pháp đơn tốt nhất
+78bcb09d72e74133114d39a0f4ff78c7,73/2006/qh+37,1,1,1,RRF bằng phương pháp đơn tốt nhất
+78eed92ecbe403fc33d74e2027d06cc9,14/2013/tt-bkhcn+6,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+7907489a41661c798ca0a2702f3a90e2,02/2021/tt-bgdđt+4,6,4,4,RRF bằng phương pháp đơn tốt nhất
+7949c6a1e532d1b35a07f5025728b126,46/2019/nđ-cp+15,1,2,1,RRF bằng phương pháp đơn tốt nhất
+79b13dbf3be5ca068422ea5f83d30785,100/2019/nđ-cp+12,5,1,1,RRF bằng phương pháp đơn tốt nhất
+79b7fd69eb0aefb615c518a2e0f337e0,51/2014/qh13+5,2,13,6,RRF tệ hơn (đẩy xuống)
+7a120401517eb9a7c92f9930c8f5e243,1371/2004/qđ-btm+2,2,2,1,RRF tốt hơn (kéo lên)
+7ab4d3b42a311c71216e1fe1472b032e,83/2018/nđ-cp+2,1,1,1,RRF bằng phương pháp đơn tốt nhất
+7c54319517202af00ea34b200d36b542,47/2014/nđ-cp+23,1,1,1,RRF bằng phương pháp đơn tốt nhất
+7d5768149d0867384d4a85bfed25a183,04/2019/nđ-cp+6,7,2,3,RRF tệ hơn (đẩy xuống)
+7de31f0b7a4454f7cd84d80c2c7ca660,91/2015/qh13+443,25,4,5,RRF tệ hơn (đẩy xuống)
+7e45b2e00cd1303b300e8f0a04367327,84/2017/tt-btc+5,>100,4,31,RRF tệ hơn (đẩy xuống)
+7e487fa9daad4b8ea431e449ce9af532,119/2018/nđ-cp+12,9,11,7,RRF tốt hơn (kéo lên)
+7ea9dad94f302bb4f801c7e4826de555,25/2020/nđ-cp+80,14,14,6,RRF tốt hơn (kéo lên)
+7fbaf1d945a87b8351ad2aca3770208c,08/2019/tt-blđtbxh+3,3,3,3,RRF bằng phương pháp đơn tốt nhất
+7fcdb198e39008a3a026d89be583bdbc,18/2019/nđ-cp+3,4,25,11,RRF tệ hơn (đẩy xuống)
+80ba0069f4982c6decf4ad806d31529c,08/2021/nđ-cp+63,4,2,1,RRF tốt hơn (kéo lên)
+80ec0771776b84280dad0c0e0dcb1a36,138/2013/tt-btc+4,1,1,1,RRF bằng phương pháp đơn tốt nhất
+81bbe5b7e752a489a2613b50ffce06c6,158/2020/nđ-cp+20,12,1,5,RRF tệ hơn (đẩy xuống)
+8285a16fceba6ca16b66e28474f064a8,15/2016/tt-bca+10,2,1,1,RRF bằng phương pháp đơn tốt nhất
+82c2f10ebb4b077daa3cb94e60ed837f,63/2019/nđ-cp+45,2,2,2,RRF bằng phương pháp đơn tốt nhất
+832b8c328e3c499eb440a8939745d3a8,59/2019/nđ-cp+28,1,1,1,RRF bằng phương pháp đơn tốt nhất
+8342f011cdaab195eca3fb9c1a4bd098,162/2017/nđ-cp+4,2,1,1,RRF bằng phương pháp đơn tốt nhất
+83c013ed01a9c0c3e41eab62746d097a,01/2019/tt-blđtbxh+9,16,1,1,RRF bằng phương pháp đơn tốt nhất
+859f5f04b0030639ba3cc011476cf8a1,115/2018/nđ-cp+25,2,2,2,RRF bằng phương pháp đơn tốt nhất
+85bcd54f5749f7a857c156561f7861a1,59/2020/qh14+48,6,1,2,RRF tệ hơn (đẩy xuống)
+879cda13380cd1d0d2a01ca908d2132c,08/2020/nđ-cp+43,14,1,3,RRF tệ hơn (đẩy xuống)
+87da73f990afcf895808719b6c9bb4b1,155/2020/nđ-cp+299,>100,2,35,RRF tệ hơn (đẩy xuống)
+886959468a641b9caa053697718b3dea,24/2018/tt-bgdđt+2,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+88e26ffa5abeed2c225daa0ad76a2f0f,100/2019/nđ-cp+76,14,4,2,RRF tốt hơn (kéo lên)
+88fc50848c00b5c1ee03207132d705b8,51/2019/nđ-cp+19,2,6,2,RRF bằng phương pháp đơn tốt nhất
+894350072c8a31ef0059c2bad606f6e9,35/2019/nđ-cp+12,1,1,1,RRF bằng phương pháp đơn tốt nhất
+89617010b1232eab04ae3021a3fa0df9,120/2020/tt-btc+5,1,1,1,RRF bằng phương pháp đơn tốt nhất
+8977a0bfb6d0ad17654b11030f33ef20,63/2019/nđ-cp+31,8,7,2,RRF tốt hơn (kéo lên)
+89cd7cf6f8213bb595dbfb5e9e98f508,143/2018/nđ-cp+2,>100,9,26,RRF tệ hơn (đẩy xuống)
+8ad6cbdeaff7ccb62587d186829355f9,41/2018/nđ-cp+48,>100,25,55,RRF tệ hơn (đẩy xuống)
+8bf41fe83bddc5275363d9388a20d2ff,26/2013/tt-byt+7,32,10,10,RRF bằng phương pháp đơn tốt nhất
+8eb182f8d7cc0782870bd9b59c5bf8d6,08/2021/nđ-cp+45,1,1,1,RRF bằng phương pháp đơn tốt nhất
+8f4a391f62c4f6c62ff14ecb909a1822,23/2018/tt-bgtvt+13,1,1,1,RRF bằng phương pháp đơn tốt nhất
+8f663ceda3550e504c73a6316e8c1548,100/2019/nđ-cp+24,6,7,2,RRF tốt hơn (kéo lên)
+8fa164edc7a8419cd7dc9ce66d8e695a,159/2020/nđ-cp+13,1,1,1,RRF bằng phương pháp đơn tốt nhất
+900a69ab596abcf52de668595fd7a0e3,43/2019/qh14+36,6,1,2,RRF tệ hơn (đẩy xuống)
+9040cc9cadba8e959745041a95959c49,15/2021/nđ-cp+57,1,1,1,RRF bằng phương pháp đơn tốt nhất
+91523aa38657f81c107b4675175b19bd,109/2009/nđ-cp+12,1,1,1,RRF bằng phương pháp đơn tốt nhất
+9168e79702c6775f5f657dcf1745764b,01/2021/tt-btp+11,5,1,2,RRF tệ hơn (đẩy xuống)
+916f99b1970d3f6a439b22bec8062197,45/2017/tt-byt+3,6,1,4,RRF tệ hơn (đẩy xuống)
+91e03cb9d6fdef3019a89351348e25e9,95/2018/nđ-cp+14,2,1,1,RRF bằng phương pháp đơn tốt nhất
+9249b71d8fed4421285a01b03555646c,130/2018/tt-btc+3,2,1,1,RRF bằng phương pháp đơn tốt nhất
+92ef0b467f3ac17f150094bfb95260d9,100/2019/nđ-cp+31,1,1,1,RRF bằng phương pháp đơn tốt nhất
+92f48ee397390c339a2a56ecb2ed665e,101/2020/tt-btc+3,1,1,1,RRF bằng phương pháp đơn tốt nhất
+93507da019dd1a1a6278f83dc29193ee,91/2015/qh13+620,5,1,2,RRF tệ hơn (đẩy xuống)
+94291dcc292496163eb5c8a3ec2a4a8f,06/2019/nđ-cp+3,>100,72,>100,RRF tệ hơn (đẩy xuống)
+947306a4d5fbef7fbc1ca0d9d48ff617,25/2020/nđ-cp+50,1,1,1,RRF bằng phương pháp đơn tốt nhất
+9808ba833d46492d232d720820a07a9e,100/2019/nđ-cp+12,1,12,4,RRF tệ hơn (đẩy xuống)
+9834c9b237b20b462b24d27444815276,41/2018/tt-bnnptnt+20,>100,2,11,RRF tệ hơn (đẩy xuống)
+98ad87f7bdb494412064dc0e583d41f6,126/2018/tt-btc+4,2,60,14,RRF tệ hơn (đẩy xuống)
+9a915b5bb08e0fe3460f39b4928c534e,49/2018/tt-byt+18,1,1,1,RRF bằng phương pháp đơn tốt nhất
+9aeff349f51adb1cd0ea368a5fd61f85,45/2020/nđ-cp+25,1,1,1,RRF bằng phương pháp đơn tốt nhất
+9bcc39fecf86baf6a44cf9a54b7e1aa6,101/2017/nđ-cp+36,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+9bcc39fecf86baf6a44cf9a54b7e1aa6,58/2010/qh12+35,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+9cba0da6ab87f54f2cbf26dafeb2c19a,76/2018/nđ-cp+37,1,1,1,RRF bằng phương pháp đơn tốt nhất
+9ce7a44cbeef20127aa0877efec2b0b0,100/2019/nđ-cp+20,1,1,1,RRF bằng phương pháp đơn tốt nhất
+9d8083a00f33975c2eff8d16028b72f4,28/2020/nđ-cp+31,1,1,1,RRF bằng phương pháp đơn tốt nhất
+9d8f44230b1d403a3dabd1706aa97b67,42/2019/nđ-cp+32,9,1,1,RRF bằng phương pháp đơn tốt nhất
+9db6f188c98251d1de3bfb345060eebc,04/2021/nđ-cp+7,1,4,2,RRF tệ hơn (đẩy xuống)
+9deff8f123a30c22e4695da21b079bb2,26/2019/nđ-cp+28,2,2,1,RRF tốt hơn (kéo lên)
+9df3f7ec34db14f1d207cce4d8fdca8f,50/2019/nđ-cp+14,2,13,1,RRF tốt hơn (kéo lên)
+9ef2eb321b9d8847b51d9ab12615740d,06/2018/tt-btp+5,1,3,1,RRF bằng phương pháp đơn tốt nhất
+9f80d0a30340c2f7fb2e0fecabcd5fb7,41/2019/qh14+26,22,9,4,RRF tốt hơn (kéo lên)
+9fcfee4854de4c17ac6448dc3e74a4b0,52/2020/tt-btc+14,1,1,1,RRF bằng phương pháp đơn tốt nhất
+a0d2463a85cfb74adb6a9188de43b4fd,05/2014/tt-ttcp+18,1,1,1,RRF bằng phương pháp đơn tốt nhất
+a0d2463a85cfb74adb6a9188de43b4fd,07/2012/nđ-cp+18,3,2,2,RRF bằng phương pháp đơn tốt nhất
+a0de865f4c1729d050fd356478022fc7,69/2020/tt-btc+8,10,1,3,RRF tệ hơn (đẩy xuống)
+a158eb9cbec840f3886590ad3e50fe7b,26/2019/nđ-cp+27,4,3,2,RRF tốt hơn (kéo lên)
+a18b2f6d6312cbc25b440aa3dc459099,33/2021/nđ-cp+12,>100,3,7,RRF tệ hơn (đẩy xuống)
+a19a6a08240b0756e496f8607d4c6dbe,01/2016/qh14+12,1,1,1,RRF bằng phương pháp đơn tốt nhất
+a3d21221a0002590affb7949419a927f,66/2014/tt-bca+15,4,4,2,RRF tốt hơn (kéo lên)
+a3e149b88ad0055fa602f6a1166f541e,100/2019/nđ-cp+30,28,8,8,RRF bằng phương pháp đơn tốt nhất
+a43a6785caab17c87287d55d4a4f986d,01/2020/tt-tandtc+7,1,1,1,RRF bằng phương pháp đơn tốt nhất
+a5d2af408de37c42b09b45eecd41e55e,99/2020/nđ-cp+4,17,6,5,RRF tốt hơn (kéo lên)
+a5e7d9da4987c27a9781911e432d6430,35/2019/nđ-cp+12,1,1,1,RRF bằng phương pháp đơn tốt nhất
+a6224ad263694a8cc0a15a6ba2bacc6f,45/2017/tt-byt+3,1,1,1,RRF bằng phương pháp đơn tốt nhất
+a63fba8e78124c2175632ab8b4ecf2e4,115/2018/nđ-cp+6,2,3,1,RRF tốt hơn (kéo lên)
+a66cf4326d4358fd4ef69aeecaa9f67d,52/2020/nđ-cp+12,1,1,1,RRF bằng phương pháp đơn tốt nhất
+a6732b2c4a59f3bdf592c8aa7fd7d013,63/2014/nđ-cp+111,6,2,1,RRF tốt hơn (kéo lên)
+a678b82ff3c95b564f43b5bb14552c2c,29/2018/tt-btc+11,1,1,1,RRF bằng phương pháp đơn tốt nhất
+a734d99f16edcccc873f9a5cc3b33127,43/2019/qh14+31,1,2,1,RRF bằng phương pháp đơn tốt nhất
+a74aed7e8d3c83e11861f0dcbda33d1b,10/2020/nđ-cp+9,3,3,3,RRF bằng phương pháp đơn tốt nhất
+a87d52d4eb702e670123bb282b7def58,33/2021/nđ-cp+20,2,3,3,RRF tệ hơn (đẩy xuống)
+a8c8abab0b7d4726d9dc4772add994b3,119/2018/nđ-cp+5,4,1,1,RRF bằng phương pháp đơn tốt nhất
+a908a6f613dcf43c63fb6f8c9ecd09d8,59/2020/qh14+185,2,1,1,RRF bằng phương pháp đơn tốt nhất
+aa290a61cad55545c5bb1feb3ccdf318,15/2020/nđ-cp+8,1,1,1,RRF bằng phương pháp đơn tốt nhất
+aa314f67fc76a0939f8637516abfa0eb,82/2020/nđ-cp+17,1,1,1,RRF bằng phương pháp đơn tốt nhất
+aa7d7054cd16a147ee12584c8653ace3,100/2019/nđ-cp+16,2,1,1,RRF bằng phương pháp đơn tốt nhất
+ab5414ca35659971d95322548fc4d8f3,03/2020/tt-bgdđt+5,7,34,8,RRF tệ hơn (đẩy xuống)
+abc2bbd82ea12a207ede579e725140e5,06/2019/nđ-cp+3,8,26,14,RRF tệ hơn (đẩy xuống)
+acdcadd84b71118c8ee653c4c8dd1377,63/2019/nđ-cp+48,2,2,2,RRF bằng phương pháp đơn tốt nhất
+ad30bfc4e0e064998d435a12d731ca32,01/2020/tt-bng+23,2,1,1,RRF bằng phương pháp đơn tốt nhất
+ad63205543a04d227b6cb4ddbde4976e,141/2020/nđ-cp+7,3,2,2,RRF bằng phương pháp đơn tốt nhất
+ade365e2ec564c48d48340a04d3a0f9a,02/2020/tt-bvhttdl+17,18,1,7,RRF tệ hơn (đẩy xuống)
+af65689026111bd36b904c06521839aa,03/2020/tt-bgtvt+53,4,2,2,RRF bằng phương pháp đơn tốt nhất
+af777180cabf5b9ade4794ea92f6647f,65/2014/tt-bqp+3,1,1,1,RRF bằng phương pháp đơn tốt nhất
+af9123b62f9a0ee2bfef69f516287754,15/2016/tt-bca+6,>100,9,32,RRF tệ hơn (đẩy xuống)
+afd354c383f8d7bacfb8774e7d271241,59/2020/nđ-cp+11,2,12,4,RRF tệ hơn (đẩy xuống)
+b00e5b54b5660ff5240a8d17df39b2de,13/2012/tt-btc+6,>100,12,48,RRF tệ hơn (đẩy xuống)
+b017ed9edfbd728a003998060fd18ec6,17/2012/tt-byt+2,25,2,6,RRF tệ hơn (đẩy xuống)
+b01e23a4f632bf27210ed815b065cbf4,19/2018/tt-blđtbxh+8,7,3,5,RRF tệ hơn (đẩy xuống)
+b05a5bf073e9aa46eb08eb428b9e980a,69/2018/nđ-cp+35,4,4,4,RRF bằng phương pháp đơn tốt nhất
+b1e0b586eb09e0d3af0d4c981dee63b6,115/2018/nđ-cp+24,2,1,1,RRF bằng phương pháp đơn tốt nhất
+b2ba459e9c0bcbf64e266e3c49903516,38/2018/tt-byt+48,2,1,2,RRF tệ hơn (đẩy xuống)
+b2fccf1f8d21338e6d112fdc31818c36,58/2010/qh12+37,5,3,2,RRF tốt hơn (kéo lên)
+b3029cc9b1800b2d442585bb497f94a8,08/2021/nđ-cp+19,1,1,1,RRF bằng phương pháp đơn tốt nhất
+b372a4304371990715cdb026caef9b06,100/2019/nđ-cp+32,1,1,1,RRF bằng phương pháp đơn tốt nhất
+b3f0038799fd9cd2152d13acdd63e467,02/2019/tt-btc+3,5,2,3,RRF tệ hơn (đẩy xuống)
+b4053b5250f6c3f1a5b0dc55a871da5b,14/2014/tt-blđtbxh+9,1,1,1,RRF bằng phương pháp đơn tốt nhất
+b437cfdaa9110008aad80a1b979d6f12,41/2019/qh14+76,1,1,1,RRF bằng phương pháp đơn tốt nhất
+b45b3e7133693cd1aab81a95d537bead,24/2018/tt-bnnptnt+6,1,15,4,RRF tệ hơn (đẩy xuống)
+b4fcd4aabbb73d37068eeab540b9b951,100/2019/nđ-cp+12,2,21,3,RRF tệ hơn (đẩy xuống)
+b520a1bbeeff036f38edc829806cf452,47/2014/qh13+20,51,4,11,RRF tệ hơn (đẩy xuống)
+b5b5df7ecb7ce484139a046c7e9a84e8,08/2020/nđ-cp+70,1,5,2,RRF tệ hơn (đẩy xuống)
+b5ea403bc2d280a0ac4774e5cc0c08ad,118/2015/nđ-cp+35,13,13,6,RRF tốt hơn (kéo lên)
+b73ce43c2b161ae68fb1e12fd6d71a17,100/2019/nđ-cp+44,1,1,1,RRF bằng phương pháp đơn tốt nhất
+b7548c72aeb1c6bb45ae2a9b27ee1a40,119/2018/tt-btc+3,1,4,1,RRF bằng phương pháp đơn tốt nhất
+b79a0d2ddf6f7d400d36ae63200fa1a3,43/2017/tt-btc+14,1,1,1,RRF bằng phương pháp đơn tốt nhất
+b89c0ad1d9590aa47563f61f9a36809e,38/2018/tt-bnnptnt+18,1,1,1,RRF bằng phương pháp đơn tốt nhất
+b91172b7a46e8a40708de69cdf36779c,07/2019/tt-bnv+6,1,6,1,RRF bằng phương pháp đơn tốt nhất
+b93e5ca009eae185dd5c8d786a9e213b,52/2014/qh13+3,>100,97,>100,RRF tệ hơn (đẩy xuống)
+b95b669e9a2605c992188b90bdf9d8c7,84/2015/qh13+20,1,1,1,RRF bằng phương pháp đơn tốt nhất
+bbc884e6b942a0a9e6e3f98ca2adcfa7,100/2019/nđ-cp+31,1,1,1,RRF bằng phương pháp đơn tốt nhất
+bbd8b4e9e09426bdff7560de4f636c9d,04/2019/tt-btttt+4,1,1,1,RRF bằng phương pháp đơn tốt nhất
+bbdd874da9bf0c7cdc0f551b6c677630,03/2020/tt-bgtvt+16,1,1,1,RRF bằng phương pháp đơn tốt nhất
+bc351dfaa66ec92fbabd409bbf3d736a,25/2020/tt-bgdđt+6,1,1,1,RRF bằng phương pháp đơn tốt nhất
+bda416f28b8c88ce25604a26b01081cb,41/2019/qh14+3,37,>100,70,RRF tệ hơn (đẩy xuống)
+bdd6d5e742ca5b2f7626058043de3f3e,100/2020/nđ-cp+6,2,2,2,RRF bằng phương pháp đơn tốt nhất
+be0f6a7f18ee462332cfe71aacfb7dbd,85/2015/qh13+29,1,1,1,RRF bằng phương pháp đơn tốt nhất
+be1cbe5419c455195bfce52907594b1a,05/2019/tt-bgtvt+2,14,>100,29,RRF tệ hơn (đẩy xuống)
+be1eee8d8c1ab0971878d7287889f543,05/2016/tt-btttt+10,6,2,4,RRF tệ hơn (đẩy xuống)
+c00adac8afbfe5e18668afbab3e04e68,98/2020/nđ-cp+24,1,1,1,RRF bằng phương pháp đơn tốt nhất
+c00adac8afbfe5e18668afbab3e04e68,98/2020/nđ-cp+4,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+c0cb74e9032aa8c87391e426c277bbdc,01/2019/tt-bvhttdl+6,1,1,1,RRF bằng phương pháp đơn tốt nhất
+c0e3c1e8114fad27129d6a784cf29459,25/2020/nđ-cp+51,14,7,8,RRF tệ hơn (đẩy xuống)
+c0eb4646e39857d61556558b84448911,25/2012/tt-bca+6,1,2,1,RRF bằng phương pháp đơn tốt nhất
+c10851e084d1246f6babcded83c01d54,120/2020/tt-btc+5,1,1,1,RRF bằng phương pháp đơn tốt nhất
+c184bb1204f8ed22a43cd8866a115a58,23/2012/qh13+19,5,1,1,RRF bằng phương pháp đơn tốt nhất
+c22c23b0f74b6dd20511f37959dfd997,11/2019/tt-bct+4,24,6,13,RRF tệ hơn (đẩy xuống)
+c28084829e8f78766dcab9f49861bb2c,100/2019/nđ-cp+37,1,1,1,RRF bằng phương pháp đơn tốt nhất
+c29ce077fd23d82056b776c48d8fa62d,92/2018/nđ-cp+14,>100,2,40,RRF tệ hơn (đẩy xuống)
+c2a3b5d439568ac8c366d0bf2a1d646f,18/2019/tt-bgtvt+10,36,1,11,RRF tệ hơn (đẩy xuống)
+c2d8749e7543de6c5c0cfbc9ca04e699,23/2018/tt-bgtvt+24,1,2,1,RRF bằng phương pháp đơn tốt nhất
+c33bdb76cd8d4695d565748efa2f4d3d,06/2016/ttlt-bvhttdl-bnv+8,7,10,4,RRF tốt hơn (kéo lên)
+c3799e8baab5cd48188a7da9d458ae0f,48/2019/tt-btc+7,1,1,1,RRF bằng phương pháp đơn tốt nhất
+c4486b99e998f101c57d936659ea94d8,82/2020/nđ-cp+13,1,1,1,RRF bằng phương pháp đơn tốt nhất
+c5c4d90a3806737b5ffea4ceeb5052ef,94/2019/nđ-cp+4,1,1,1,RRF bằng phương pháp đơn tốt nhất
+c6d446be151d546a758b051934455ff5,69/2018/nđ-cp+47,2,2,1,RRF tốt hơn (kéo lên)
+c7d62bfddb36d51e30294ca17e838244,31/2018/tt-bnnptnt+3,2,3,2,RRF bằng phương pháp đơn tốt nhất
+c845b89c2b073071c3f82d5580554728,05/2013/qđ-ttg+5,3,1,2,RRF tệ hơn (đẩy xuống)
+c8a98b88afc3a2a93a23fa637af6287c,18/2020/tt-btc+14,3,6,3,RRF bằng phương pháp đơn tốt nhất
+c8a98b88afc3a2a93a23fa637af6287c,24/2016/nđ-cp+11,1,1,1,RRF bằng phương pháp đơn tốt nhất
+c99584af7bf52f453dcac6080cddc807,58/2020/tt-bca+12,1,2,1,RRF bằng phương pháp đơn tốt nhất
+ca9a29022034fd19ae5594e690880736,54/2019/qh14+59,1,1,1,RRF bằng phương pháp đơn tốt nhất
+cae7fbfa74f57e66bd03fa8a0b801776,83/2018/nđ-cp+31,2,>100,18,RRF tệ hơn (đẩy xuống)
+cba8f7df723728811350783f9c9b516e,94/2020/nđ-cp+3,5,1,2,RRF tệ hơn (đẩy xuống)
+cbc5106e60147c75ad3f73683caa927f,66/2019/nđ-cp+26,1,1,1,RRF bằng phương pháp đơn tốt nhất
+cc24cf1fffc852f58ef76ba35e0e224e,27/2018/tt-bvhttdl+5,>100,16,50,RRF tệ hơn (đẩy xuống)
+cc94863ffa17c0735de5ad4dc781f7c1,45/2020/nđ-cp+24,1,1,1,RRF bằng phương pháp đơn tốt nhất
+ccc8349defbab841d95a5e754b655673,05/2019/tt-bgtvt+2,1,>100,30,RRF tệ hơn (đẩy xuống)
+cd595dea7ff08e7061da1f3a507e3c04,100/2019/nđ-cp+12,2,24,2,RRF bằng phương pháp đơn tốt nhất
+cd7a61ca91f5a553489b66c805798888,100/2019/nđ-cp+18,1,1,1,RRF bằng phương pháp đơn tốt nhất
+cdc4b65a2f89e54e5d4993e12a7902d0,08/2020/nđ-cp+60,1,1,1,RRF bằng phương pháp đơn tốt nhất
+ce6a3b861c83bb111514f9dd7e2f6682,112/2020/nđ-cp+19,1,1,1,RRF bằng phương pháp đơn tốt nhất
+ce879b130207fdb89e266c495b7ffa73,33/2018/tt-blđtbxh+2,2,2,2,RRF bằng phương pháp đơn tốt nhất
+ceb1fac3bef587fa0d95e22cd5b49561,69/2018/nđ-cp+52,1,1,1,RRF bằng phương pháp đơn tốt nhất
+cee2679f4661bb98b5e5678684c2e709,41/2019/qh14+85,2,32,6,RRF tệ hơn (đẩy xuống)
+cf6fae7673a650ffae488227b248a296,45/2017/tt-byt+3,6,3,1,RRF tốt hơn (kéo lên)
+cf9c96782463a81d5c304b2de48b3804,53/2008/qđ-bgdđt+11,31,3,5,RRF tệ hơn (đẩy xuống)
+cfc7573944c2ae77bbbad77f452fff92,141/2020/nđ-cp+7,1,2,1,RRF bằng phương pháp đơn tốt nhất
+d016adca46d8c04484672756639f5336,31/2013/nđ-cp+27,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d0797469876f70bd7a9818be23306e12,36/2015/tt-btnmt+14,2,2,3,RRF tệ hơn (đẩy xuống)
+d07f67fdcb12625a4515a076a35f6600,22/2020/tt-bct+13,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d0bfaed287eaeb214ed825bdd99cec23,28/2018/tt-btc+8,13,>100,34,RRF tệ hơn (đẩy xuống)
+d10317682630133ee1789446446604ad,19/2020/tt-bgdđt+7,2,12,2,RRF bằng phương pháp đơn tốt nhất
+d11daa57b56320746c335cd572c44911,100/2019/nđ-cp+32,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d131ffe6597b6348485dc3616dfcac21,105/2020/tt-btc+6,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d2b38f378c0e35f5e904d842cd0a85e5,25/2020/tt-bgdđt+12,>100,1,15,RRF tệ hơn (đẩy xuống)
+d3e3db3c2ac0799e4afa85e44766003b,155/2020/nđ-cp+159,2,2,2,RRF bằng phương pháp đơn tốt nhất
+d3e786ad4f0dbd1dc89145c5ae46ab01,57/2020/tt-bqp+9,2,1,1,RRF bằng phương pháp đơn tốt nhất
+d4b17c0edc5ba846b27914a8b3918063,02/2020/tt-bvhttdl+25,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d4b452327cebe6146325de1d3795a98a,58/2020/tt-bca+9,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d4b4bd056304a63714b0ddb55fbdb7c7,01/2019/nđ-cp+17,6,1,3,RRF tệ hơn (đẩy xuống)
+d4ffffae86f0fc243911c361efce9a0b,59/2020/qh14+185,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d5b4e85c19b9fd90a22fdc4733b19141,100/2019/nđ-cp+37,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d5ddd063ebc3b32ab529e43e4c76aa91,08/2019/tt-blđtbxh+33,29,1,2,RRF tệ hơn (đẩy xuống)
+d745061f63a07ce6fd757f2d9e64e927,100/2019/nđ-cp+31,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d7b551865088d4e8edbb942013a88323,64/2020/qh14+89,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d82a3c0e6f65f33096eb86b05a09209b,71/2019/nđ-cp+28,5,1,1,RRF bằng phương pháp đơn tốt nhất
+d849247cce820df9d6c487916b038a6f,59/2020/qh14+88,2,5,2,RRF bằng phương pháp đơn tốt nhất
+d867da76eaabfbead320c64dd8f9f057,113/2007/nđ-cp+10,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d938e8b1fc7fcc8eafde21a5ca004d21,93/2018/nđ-cp+11,1,1,1,RRF bằng phương pháp đơn tốt nhất
+d996b0aa1614ab878df51ae38b321e93,100/2019/nđ-cp+11,2,2,2,RRF bằng phương pháp đơn tốt nhất
+d9c9f007541e7e1dc6fdb594aa179afd,63/2019/nđ-cp+36,2,10,5,RRF tệ hơn (đẩy xuống)
+da3068aa49f23726cb237e66f1e665c9,25/2020/nđ-cp+59,1,1,1,RRF bằng phương pháp đơn tốt nhất
+da467f5b0704a064932782c6bdb51e61,01/2016/qh14+10,38,1,3,RRF tệ hơn (đẩy xuống)
+da76e776e953f926b8a71267e9e24a3f,100/2019/nđ-cp+26,1,1,1,RRF bằng phương pháp đơn tốt nhất
+dc4b731e5f52f4a70afe6feafb2bb60b,82/2020/nđ-cp+9,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+dc801d69e130c69cda0d59213c27ec93,01/2018/tt-bkhcn+6,1,1,1,RRF bằng phương pháp đơn tốt nhất
+dcba5d3bebd88c75850ecad3a3183821,08/2021/nđ-cp+65,1,1,1,RRF bằng phương pháp đơn tốt nhất
+dcd122beeb0a0885b58ca3d7c1975f8f,76/2018/nđ-cp+38,1,1,1,RRF bằng phương pháp đơn tốt nhất
+dd86ab2f1bc336245d216f1ef99afca6,155/2018/nđ-cp+11,3,2,2,RRF bằng phương pháp đơn tốt nhất
+ddff1c25a00e3649b5b3819bf4513334,46/2019/nđ-cp+24,>100,5,30,RRF tệ hơn (đẩy xuống)
+de32d8e829b8aa414e39b7d8dcb71b57,53/2019/qh14+30,3,23,5,RRF tệ hơn (đẩy xuống)
+de5b7fc480a433a2552d17d1ef5d0c61,98/2020/nđ-cp+23,2,1,1,RRF bằng phương pháp đơn tốt nhất
+e0218f13df130ca2b092ac43b60fb4d8,84/2020/tt-bqp+4,>100,2,14,RRF tệ hơn (đẩy xuống)
+e115a30c1745d943443ea81e39ee8702,08/2021/nđ-cp+41,2,1,1,RRF bằng phương pháp đơn tốt nhất
+e24593f36d4b84a18196aff128710299,54/2019/qh14+86,2,2,2,RRF bằng phương pháp đơn tốt nhất
+e2dae636eef9fc32d2603c2b0e490cd3,31/2013/nđ-cp+32,1,1,1,RRF bằng phương pháp đơn tốt nhất
+e2f5e5f8450bd6da6a2cb731e7cd93b5,53/2019/tt-bgtvt+3,4,42,12,RRF tệ hơn (đẩy xuống)
+e31e16b4aca9dfc96658635e46ac41fe,34/2012/nđ-cp+4,2,1,1,RRF bằng phương pháp đơn tốt nhất
+e339e5fb53ed070e12c1b993274faed0,08/2018/tt-bxd+3,3,6,3,RRF bằng phương pháp đơn tốt nhất
+e37cd0a4a27edd7363544a822fdbe811,96/2020/nđ-cp+7,3,>100,16,RRF tệ hơn (đẩy xuống)
+e385aee72c44ea80e1393b034374f9b2,56/2019/nđ-cp+13,>100,1,11,RRF tệ hơn (đẩy xuống)
+e5010f1c24c3eb763c74a174b7ef665d,52/2020/nđ-cp+13,1,1,1,RRF bằng phương pháp đơn tốt nhất
+e55f4710bf21f36a92231787e5b43f26,23/2020/nđ-cp+11,1,1,1,RRF bằng phương pháp đơn tốt nhất
+e64dd3e5a534110c17a8076061db65f1,140/2016/nđ-cp+9,3,1,1,RRF bằng phương pháp đơn tốt nhất
+e66ae5eecc1672bac2c5799673666bda,26/2019/nđ-cp+28,2,1,2,RRF tệ hơn (đẩy xuống)
+e69428fb99388a69123934ecdff5f370,28/2018/tt-btc+8,4,1,1,RRF bằng phương pháp đơn tốt nhất
+e72a09799da96df2bba7ef461d24ce94,100/2019/nđ-cp+31,1,1,1,RRF bằng phương pháp đơn tốt nhất
+e794623c173e6ac90300e1797ca03cd1,17/2021/nđ-cp+5,1,1,1,RRF bằng phương pháp đơn tốt nhất
+e83592666e3b4ff12a421de25bf58c8e,38/2020/nđ-cp+16,1,1,1,RRF bằng phương pháp đơn tốt nhất
+e88ccd6a3b8aaebcb92a89322da8d766,13/2014/tt-btp+10,4,1,1,RRF bằng phương pháp đơn tốt nhất
+e947057553191f30bea39a92d06ff875,44/2020/nđ-cp+12,1,3,1,RRF bằng phương pháp đơn tốt nhất
+e94b9c81ca0115ce6157137fdbeb431f,11/2017/tt-btnmt+5,2,11,3,RRF tệ hơn (đẩy xuống)
+e952c060dc1e3a45ef8dd0903f66be01,41/2018/nđ-cp+8,31,2,6,RRF tệ hơn (đẩy xuống)
+e964c79a480698afab8fe8629e143de1,21/2020/tt-bgdđt+8,3,1,1,RRF bằng phương pháp đơn tốt nhất
+e98cd204487e7f828d98b0289a65e2b3,15/2012/tt-bgtvt+6,2,1,1,RRF bằng phương pháp đơn tốt nhất
+ead5c9334e7087e864be9d5e2424781e,11/2017/qh14+31,1,1,1,RRF bằng phương pháp đơn tốt nhất
+ead944f41d92fc3bbdde496991ae6d14,98/2020/tt-btc+25,1,9,3,RRF tệ hơn (đẩy xuống)
+eafeab74080aaa7b90bf043df3886c96,100/2019/nđ-cp+13,1,1,1,RRF bằng phương pháp đơn tốt nhất
+eb2e3254c1fd756ba01a57c5102a8823,77/2018/tt-btc+8,5,2,3,RRF tệ hơn (đẩy xuống)
+eb32736d77d90148ce82d71c2de75b83,06/2019/tt-nhnn+10,3,2,2,RRF bằng phương pháp đơn tốt nhất
+eb3732aed10643c0f9a8cf59001749ba,27/2019/qđ-ttg+3,16,21,15,RRF tốt hơn (kéo lên)
+ec5f2d87d68fe0ed125734b092d15e20,03/2011/nđ-cp+6,1,1,1,RRF bằng phương pháp đơn tốt nhất
+ec71550841fc6c11c807579a4c4ecce5,28/2018/tt-btc+8,2,1,1,RRF bằng phương pháp đơn tốt nhất
+ed645d9c2590eb65b41753d61f376ff3,16/2020/nđ-cp+25,4,1,1,RRF bằng phương pháp đơn tốt nhất
+ee4c0255f3e43a2a40e6a3f65a5a5852,17/2019/tt-bxd+4,1,1,1,RRF bằng phương pháp đơn tốt nhất
+ee5345c79e3326c1ec481fb07fc513f9,33/2018/tt-bgtvt+40,2,1,1,RRF bằng phương pháp đơn tốt nhất
+ee7d61a63930ced16c9b043d41c526bb,10/2021/nđ-cp+27,10,1,3,RRF tệ hơn (đẩy xuống)
+ee82e40b039b59b311fd84b4dffac9b6,33/2016/tt-blđtbxh+18,1,1,1,RRF bằng phương pháp đơn tốt nhất
+ef43c68e911e19dd0920a9e9a147afd4,01/2016/qđ-ttg+6,3,10,6,RRF tệ hơn (đẩy xuống)
+efdaebbd4d47e4319b5f2327c514f0b1,115/2018/nđ-cp+6,1,3,1,RRF bằng phương pháp đơn tốt nhất
+f0896ffae1d8a55177ed6322c00e71d8,100/2019/nđ-cp+12,1,4,1,RRF bằng phương pháp đơn tốt nhất
+f10c8fc023d648a9c0579feadcb02a2a,64/2017/tt-btnmt+5,14,3,8,RRF tệ hơn (đẩy xuống)
+f11d01d9b94cdda7d0dd571403cd1c12,59/2019/nđ-cp+48,1,1,1,RRF bằng phương pháp đơn tốt nhất
+f216cdd1dcd48377116b603c5ac9255f,54/2019/qh14+74,38,12,12,RRF bằng phương pháp đơn tốt nhất
+f5af352c19e7ad326fb2f4b5813c49bd,59/2020/qh14+185,1,1,1,RRF bằng phương pháp đơn tốt nhất
+f6381b73a93aeb3298369b6a6f116474,23/2018/tt-btnmt+3,1,2,2,RRF tệ hơn (đẩy xuống)
+f84fbd62619fb422ebd0ebbc4595fcba,19/2018/tt-bct+32,>100,23,56,RRF tệ hơn (đẩy xuống)
+f8605c7e339ff19c25afc4b82a0698f6,167/2013/nđ-cp+5,3,5,1,RRF tốt hơn (kéo lên)
+f8cdb8644e825e94813bc3c87870529e,100/2019/nđ-cp+11,2,1,2,RRF tệ hơn (đẩy xuống)
+f986e16441f76cb1c1ec5d6937845ff2,23/2018/tt-bct+11,16,2,5,RRF tệ hơn (đẩy xuống)
+f9ef21504fbc9d62ab42990a267a9087,100/2019/nđ-cp+22,1,1,1,RRF bằng phương pháp đơn tốt nhất
+fa2f47fb32939ce4ddef48c45713837a,05/2018/ttlt-vksndtc-tandtc-bca-bqp+13,7,1,2,RRF tệ hơn (đẩy xuống)
+fa463f421f81da3cbdbe147ad260b488,158/2020/nđ-cp+3,1,2,1,RRF bằng phương pháp đơn tốt nhất
+fa7e02aab9310285ed0917d2c2d25df4,50/2019/nđ-cp+6,10,5,2,RRF tốt hơn (kéo lên)
+faa8dcfc81a5d8097ce9be36834125fc,167/2013/nđ-cp+20,1,>100,4,RRF tệ hơn (đẩy xuống)
+fad1bbcb2a9ff05347a872580e047726,27/2016/tt-bxd+16,1,1,1,RRF bằng phương pháp đơn tốt nhất
+fc345184c4dfff9ae7635a65333c8a7a,05/2019/tt-bgtvt+2,1,>100,24,RRF tệ hơn (đẩy xuống)
+fca89828837356c9bc3f1dad29bd21b4,30/2020/nđ-cp+2,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+fcc3f85dbc3838ec66e6188668726033,15/2014/tt-bca+3,>100,>100,>100,RRF bằng phương pháp đơn tốt nhất
+fe7d15e338c05614d38d9556be8ce471,96/2020/nđ-cp+10,1,1,1,RRF bằng phương pháp đơn tốt nhất
+fead4932081ae13da23483edc357df7a,100/2019/nđ-cp+32,1,17,4,RRF tệ hơn (đẩy xuống)
+ff81167a84a261b27bdde9ed3fbec012,100/2019/nđ-cp+16,35,>100,72,RRF tệ hơn (đẩy xuống)
