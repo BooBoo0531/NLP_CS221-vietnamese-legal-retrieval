@@ -1,5 +1,30 @@
 # Tiến độ B — Dense (E5) / Hybrid RRF
 
+## 2026-11-26 (tiếp — chia đoạn, KHÓA CẤU HÌNH CUỐI)
+
+**Mục 4 kế hoạch — điều luật dài:** xong, so sánh thực nghiệm cắt đầu vs chia đoạn trên dev. Script: `src/dense/segment_long_articles.py` (CPU, chia theo khoản + cửa sổ overlap fallback) → `src/dense/encode_segments.py` (GPU, Kaggle T4, 120.720 đoạn trong 325,8s, 370,5 đoạn/s) → `src/dense/retrieve_top100_segmented.py` (max-pooling theo doc_id bằng `np.maximum.reduceat`, vector hóa).
+
+**Bảng dev đầy đủ (5 hệ thống):**
+
+| | nDCG@10 | MRR@10 | Recall@10 | Recall@100 |
+|---|---:|---:|---:|---:|
+| BM25 (k1=1.5, b=0.9) | 0.608935 | 0.552712 | 0.788382 | 0.910788 |
+| Dense E5 (cắt đầu — bỏ) | 0.702605 | 0.657205 | 0.848548 | 0.947095 |
+| RRF (BM25 + Dense cắt đầu — bỏ) | 0.695126 | 0.644857 | 0.853734 | 0.967842 |
+| **Dense E5 (chia đoạn — CHỐT)** | **0.764478** | **0.722457** | 0.899378 | 0.974066 |
+| RRF (BM25 + Dense chia đoạn — CHỐT) | 0.731228 | 0.683207 | 0.882780 | **0.976141** |
+
+**Quyết định khóa cấu hình Dense: CHIA ĐOẠN** (không phải cắt đầu). Chia đoạn cải thiện nDCG@10 +0,062 so với cắt đầu — xác nhận thực nghiệm đúng dự đoán từ tỷ lệ cắt 31% ở doc_id có nhãn dev (mục 2). File cắt-đầu (`results/dense_e5_dev.csv`, `results/rrf_dev.csv` và metrics tương ứng) **giữ lại, không xóa** — dùng làm ablation "cắt đầu vs chia đoạn" cho báo cáo (đúng yêu cầu mục 4 kế hoạch), nhưng không phải cấu hình chạy test.
+
+**Phát hiện nhất quán và đáng chú ý nhất của nhánh B: RRF không vượt Dense một mình ở nDCG@10, trong CẢ HAI biến thể Dense** (cắt đầu: 0,695 vs 0,703; chia đoạn: 0,731 vs 0,764). Chạy lại `rank_shift_analysis.py` với Dense chia đoạn xác nhận cùng cơ chế: **149 cặp (qid, doc_id) bị RRF đẩy xuống so với 42 cặp được kéo lên** (tỷ lệ ~3,5 lần, gần giống hệt tỷ lệ 153/42 ở Dense cắt đầu) → `results/rrf_rank_shift_segmented_dev.csv`. Đây là bằng chứng mạnh, lặp lại ổn định qua 2 cấu hình khác nhau, không phải ngẫu nhiên của một lần chạy — nhưng **ý nghĩa thống kê vẫn phải chờ bootstrap (T5)**.
+
+**Đối chứng chính thức cho bootstrap T5: Dense E5 (chia đoạn)** — phương pháp đơn có nDCG@10 cao nhất trên dev (0,764478), chốt theo đúng CLAUDE.md mục 5 trước khi chạy test.
+
+**CẤU HÌNH DENSE/HYBRID ĐÃ KHÓA — A có thể tiến hành tuần 5 (chạy test) khi sparse (A) cũng đã khóa:**
+- Dense: `intfloat/multilingual-e5-base` @ `d128750597153bb5987e10b1c3493a34e5a4502a`, đóng băng, chia đoạn theo khoản (fallback cửa sổ token overlap=50), điểm điều = max điểm đoạn.
+- Hybrid: RRF(k=60) trên BM25 (k1=1.5, b=0.9, của A) + Dense chia đoạn.
+- Đối chứng bootstrap: Dense E5 (chia đoạn).
+
 ## 2026-11-26
 
 **Bước 4 — model card E5:** xong. File: `docs/model_card_e5.md` — revision (`d128750597153bb5987e10b1c3493a34e5a4502a`), dữ liệu huấn luyện 2 giai đoạn tác giả công bố, và mức bất định rò rỉ dữ liệu (không xác nhận/loại trừ được, khác trường hợp BKAI đã biết rõ). Phát hiện quan trọng: **tiếng Việt không nằm trong danh sách ngôn ngữ fine-tune giám sát** (giai đoạn 2) của E5, chỉ có khả năng xuất hiện ở giai đoạn pretrain đa ngôn ngữ tổng quát — cần nêu khi giải thích hạn chế của Dense.

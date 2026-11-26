@@ -1,0 +1,11 @@
+{
+  "model_name": "intfloat/multilingual-e5-base",
+  "model_revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "split": "dev",
+  "n_queries": 482,
+  "n_segments": 120720,
+  "n_unique_doc_ids": 61425,
+  "top_k": 100,
+  "aggregation": "max over segments per doc_id",
+  "embeddings_source": "results/dense/corpus_segmented/embeddings.npy"
+}
