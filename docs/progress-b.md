@@ -1,5 +1,23 @@
 # Tiến độ B — Dense (E5) / Hybrid RRF
 
+## 2026-11-26 (T5 — chạy TEST, Dense) — ĐÃ CHẠY, KHÔNG ĐƯỢC CHỈNH LẠI NỮA
+
+**Dense E5 (chia đoạn) trên 788 câu test — kết quả chính thức, một lần duy nhất:**
+
+```
+Số câu được chấm: 788 / Số câu có kết quả: 788
+nDCG@10    0.725833   (dev: 0.764478)
+MRR@10     0.664953   (dev: 0.722457)
+Recall@10  0.917513   (dev: 0.899378)
+Recall@100 0.987310   (dev: 0.974066)
+```
+
+File: `results/dense_e5_segmented_test.csv` (78.801 dòng = 788×100+header), `.meta.json`, `_metrics.txt`. Chạy trên Kaggle Tesla T4, dựng lại toàn bộ từ `git clone` (segmentation + encode lại từ đầu, số liệu khớp y hệt lần chạy dev: 10.870 điều chia, 120.720 đoạn, cùng phân bố phương pháp) — xác nhận tái lập được, không lệch cấu hình so với lúc khóa trên dev.
+
+**Chưa chạy RRF trên test** — đang chờ A xuất file BM25 top-100 trên test (cấu hình BM25 đã khóa). Dense một mình không phụ thuộc A nên chạy trước được.
+
+**Phát hiện lỗi dữ liệu của A, báo lại kèm bằng chứng (không tự sửa):** 2 `doc_id` khác nhau trong corpus — `63/2019/nđ-+10` và `63/2019/nđ-cp+10` — có **nội dung văn bản giống hệt nhau 100%** (1116 ký tự, "Điều 10. Hành vi vi phạm hành chính..."), nên điểm Dense giống hệt tới từng chữ số thập phân khi cả hai cùng được truy hồi (ví dụ qid `001326d55579ac49a249521530c85e75`, hạng 1-2 trong run test). Không phải lỗi script (văn bản giống → embedding giống là đúng). Nhiều khả năng lỗi mã hóa số hiệu văn bản (thiếu "cp" trong "nđ-cp") khi A chuẩn hóa corpus, dẫn tới trùng lặp dưới 2 doc_id. Không tự sửa dữ liệu — cần A xác nhận và quyết định có gộp/loại trùng hay không. Ảnh hưởng tới cả BM25 lẫn Dense như nhau (văn bản giống nhau), không làm mất hiệu lực kết quả test, nhưng nên nêu trong phần hạn chế của báo cáo.
+
 ## 2026-11-26 (tiếp — chia đoạn, KHÓA CẤU HÌNH CUỐI)
 
 **Mục 4 kế hoạch — điều luật dài:** xong, so sánh thực nghiệm cắt đầu vs chia đoạn trên dev. Script: `src/dense/segment_long_articles.py` (CPU, chia theo khoản + cửa sổ overlap fallback) → `src/dense/encode_segments.py` (GPU, Kaggle T4, 120.720 đoạn trong 325,8s, 370,5 đoạn/s) → `src/dense/retrieve_top100_segmented.py` (max-pooling theo doc_id bằng `np.maximum.reduceat`, vector hóa).
