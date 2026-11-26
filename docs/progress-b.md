@@ -1,5 +1,11 @@
 # Tiến độ B — Dense (E5) / Hybrid RRF
 
+## 2026-11-26
+
+**Bước 4 — model card E5:** xong. File: `docs/model_card_e5.md` — revision (`d128750597153bb5987e10b1c3493a34e5a4502a`), dữ liệu huấn luyện 2 giai đoạn tác giả công bố, và mức bất định rò rỉ dữ liệu (không xác nhận/loại trừ được, khác trường hợp BKAI đã biết rõ). Phát hiện quan trọng: **tiếng Việt không nằm trong danh sách ngôn ngữ fine-tune giám sát** (giai đoạn 2) của E5, chỉ có khả năng xuất hiện ở giai đoạn pretrain đa ngôn ngữ tổng quát — cần nêu khi giải thích hạn chế của Dense.
+
+**Sửa hạ tầng:** `src/dense/encode_corpus.py` và `src/dense/retrieve_top100.py` trước đây KHÔNG ghi revision model đã dùng (chỉ ghi tên model + GPU), vi phạm CLAUDE.md mục 3 ("Ghi revision mô hình... cho mọi lượt chạy"). Đã sửa: pin `revision=d128750597153bb5987e10b1c3493a34e5a4502a` khi load `SentenceTransformer`, ghi vào `timing_report.json` (encode) và file `.meta.json` mới bên cạnh mỗi run CSV (retrieve_top100). Đã bổ sung hồi tố `model_name`/`model_revision` vào `results/dense/encode_sample/timing_report.json` và tạo `results/dense_e5_dev.meta.json` cho run đã chạy trước đó (ghi rõ là suy luận lại sau, không phải pin lúc chạy thật).
+
 ## 2026-11-25
 
 **Bước 0 — dựng dữ liệu cục bộ:** xong (trước phiên này).

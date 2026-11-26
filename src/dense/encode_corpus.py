@@ -47,6 +47,7 @@ from pathlib import Path
 import numpy as np
 
 MODEL_NAME = "intfloat/multilingual-e5-base"
+MODEL_REVISION = "d128750597153bb5987e10b1c3493a34e5a4502a"  # xem docs/model_card_e5.md
 MAX_SEQ_LENGTH = 512
 SEED = 42
 FULL_CORPUS_SIZE = 61425
@@ -245,7 +246,7 @@ def main():
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     try:
-        model = SentenceTransformer(MODEL_NAME, device=device)
+        model = SentenceTransformer(MODEL_NAME, revision=MODEL_REVISION, device=device)
     except Exception as exc:
         print(f"LỖI TẢI MODEL: không tải/nạp được '{MODEL_NAME}' ({exc}).")
         print("-> Kiểm tra kết nối Internet của notebook (Kaggle: bật 'Internet' ở Settings),")
@@ -271,6 +272,8 @@ def main():
     done = finalize(doc_ids, chunks_dir, output_dir, original_idx, n_chunks)
 
     report = {
+        "model_name": MODEL_NAME,
+        "model_revision": MODEL_REVISION,
         "n_docs": len(original_idx),
         "sample_size_arg": args.sample_size,
         "batch_size": args.batch_size,

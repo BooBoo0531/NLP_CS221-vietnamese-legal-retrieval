@@ -22,6 +22,7 @@ from pathlib import Path
 import numpy as np
 
 MODEL_NAME = "intfloat/multilingual-e5-base"
+MODEL_REVISION = "d128750597153bb5987e10b1c3493a34e5a4502a"  # xem docs/model_card_e5.md
 MAX_SEQ_LENGTH = 512
 TOP_K = 100
 
@@ -86,12 +87,12 @@ def main():
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     try:
-        model = SentenceTransformer(MODEL_NAME, device=device)
+        model = SentenceTransformer(MODEL_NAME, revision=MODEL_REVISION, device=device)
     except Exception as exc:
         print(f"LỖI TẢI MODEL: không tải/nạp được '{MODEL_NAME}' ({exc}).")
         raise SystemExit(1)
     model.max_seq_length = MAX_SEQ_LENGTH
-    print(f"Device: {device} | batch_size: {args.batch_size}")
+    print(f"Model: {MODEL_NAME} @ {MODEL_REVISION} | Device: {device} | batch_size: {args.batch_size}")
 
     query_embeddings = model.encode(
         ["query: " + text for text in split_texts],
@@ -115,7 +116,20 @@ def main():
                     f.write(f"{qid},{corpus_doc_ids[index]},{rank},{scores[index]}\n")
 
     atomic_write(output_path, write_csv)
-    print(f"Đã xử lý {len(split_qids)} câu {args.split}. File kết quả: {output_path}")
+
+    meta_path = output_path.with_suffix(".meta.json")
+    meta = {
+        "model_name": MODEL_NAME,
+        "model_revision": MODEL_REVISION,
+        "split": args.split,
+        "n_queries": len(split_qids),
+        "top_k": TOP_K,
+        "batch_size": args.batch_size,
+        "embeddings_source": str(emb_path),
+    }
+    atomic_write(meta_path, lambda tmp: tmp.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8"))
+
+    print(f"Đã xử lý {len(split_qids)} câu {args.split}. File kết quả: {output_path} (metadata: {meta_path})")
 
 
 if __name__ == "__main__":

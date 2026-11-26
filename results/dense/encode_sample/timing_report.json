@@ -1,4 +1,7 @@
 {
+  "model_name": "intfloat/multilingual-e5-base",
+  "model_revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "model_revision_note": "Ghi lại sau khi thêm --revision vào script; lúc chạy chưa pin revision, đây là sha 'main' tra lại qua HF Hub API, giả định không đổi trong lúc chạy.",
   "n_docs": 3000,
   "sample_size_arg": 3000,
   "batch_size": 32,
