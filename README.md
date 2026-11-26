@@ -71,9 +71,13 @@ Chia đoạn (`src/dense/segment_long_articles.py` → `src/dense/encode_segment
 |---|---:|---:|---:|---:|
 | Dense E5 (chia đoạn), 788 câu test | 0.725833 | 0.664953 | 0.917513 | 0.987310 |
 
-File: `results/dense_e5_segmented_test.csv` (+ `.meta.json`, `_metrics.txt`). **Hybrid RRF trên test chưa chạy** — cần file BM25 top-100 trên test (cấu hình BM25 đã khóa) từ A để fuse; Dense không phụ thuộc BM25 nên đã chạy trước.
+File: `results/dense_e5_segmented_test.csv` (+ `.meta.json`, `_metrics.txt`). **Hybrid RRF trên test chưa chạy** — Dense không phụ thuộc BM25 nên đã chạy trước; RRF thì cần A.
 
-**Lỗi dữ liệu phát hiện được, báo lại cho A (chưa tự sửa):** hai `doc_id` khác nhau trong corpus — `63/2019/nđ-+10` và `63/2019/nđ-cp+10` — có nội dung văn bản **giống hệt nhau 100%** (có thể do lỗi chuẩn hóa số hiệu văn bản, thiếu "cp"). Ảnh hưởng như nhau tới BM25 và Dense (văn bản giống → điểm giống), không làm sai kết quả test nhưng nên ghi vào phần hạn chế của báo cáo.
+### Cần A làm gì tiếp (để B hoàn tất Hybrid + bootstrap)
+
+1. **Xuất file BM25 top-100 trên 788 câu test**, sau khi đã khóa cấu hình sparse (k1, b, và quyết định âm tiết hay tách từ). Đặt tên theo đúng quy ước đang dùng cho dev, chỉ đổi `_dev` thành `_test` (vd. `results/bm25_syllable_k1_1.5_b_0.9_test.csv`), cùng định dạng `qid, doc_id, rank, score`. Báo B khi file đã có — B chỉ cần chạy `src/fusion/rrf.py --bm25-run <file test của A> --dense-run results/dense_e5_segmented_test.csv` là xong RRF-test, không cần A làm gì thêm.
+2. **Quyết định về 2 doc_id trùng nội dung** (`63/2019/nđ-+10` và `63/2019/nđ-cp+10`, mục trên) — vì đây là dữ liệu của A, cần A xác nhận có đúng là lỗi chuẩn hóa hay không, và có sửa/gộp lại cho các lượt chạy sau không. B chưa tự sửa.
+3. **Phần đọc tay 45 qid** (mục 5 kế hoạch): danh sách đã có sẵn ở `annotation/sample_manifest.csv` (cột `group`: 23 qid của A, 22 qid của B, 10 qid `shared` đọc chéo — mỗi người đọc phần của mình + 5 câu `shared` thuộc nhóm kia). A đọc 23 câu nhóm `A` + 5 câu `shared` ban đầu thuộc phần B; B đọc tương tự theo chiều ngược lại. Việc của B phần này **chưa làm** (để sau), không chặn A — A có thể đọc phần của mình độc lập bất cứ lúc nào, miễn là trước khi xem thứ hạng model.
 
 **Nhật ký chi tiết, số liệu từng bước, quyết định và lý do:** `docs/progress-b.md`.
 
